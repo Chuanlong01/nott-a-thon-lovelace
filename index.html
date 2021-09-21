@@ -27,23 +27,14 @@
 		/>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<script src="https://kit.fontawesome.com/a076d05399.js"></script>
-		<link
-			href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@600&display=swap"
-			rel="stylesheet"
-		/>
-		<link
-			href="https://fonts.googleapis.com/css2?family=PT+Sans:ital@1&family=Sansita+Swashed:wght@600&display=swap"
-			rel="stylesheet"
-		/>
-		<link
-			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-		/>
+		<link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@600&display=swap" rel="stylesheet" />
+		<link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital@1&family=Sansita+Swashed:wght@600&display=swap" rel="stylesheet" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 		<link rel="stylesheet" href="style.css" />
 	</head>
 	<body>
 		<nav class="all">
-			<img class="wave-edit" src="wave.png">
+			<img class="wave-edit" src="wave.png" />
 			<div class="menu">
 				<button aria-expanded="false" aria-controls="menu-list">
 					<div id="bar1"></div>
@@ -53,9 +44,7 @@
 
 				<div class="logo">
 					<a class="logo1" href="index.html"><img src="iet.png" alt="IET UNM" /></a>
-					<a class="logo2" href="index.html"
-						><img src="nott.jpg" alt="University of Nottingham Malaysia"
-					/></a>
+					<a class="logo2" href="index.html"><img src="nott.jpg" alt="University of Nottingham Malaysia" /></a>
 				</div>
 				<a class="name" href="#nottathon">Nott-A-Thon: Turing</a>
 				<a class="rules" href="officialrules.html">Official Rules</a>
@@ -73,12 +62,8 @@
 					<p id="line4">12th of February 2021</p>
 					<p id="line5">hosted on HackerRank</p>
 					<p id="line6">Maximum 3 people per group</p>
-					<button
-						id="googleform"
-						onclick="googleform()"
-						title="CLick me to sign up in the google form"
-					>
-					<span>Register Now</span>
+					<button id="googleform" onclick="googleform()" title="CLick me to sign up in the google form">
+						<span>Register Now</span>
 					</button>
 				</div>
 				<div class="progPic"><img src="new_pic/hacker_white.png" alt="Programming dude" /></div>
@@ -108,32 +93,28 @@
 						<p id="sec">00</p>
 						<br /><span id="label">Seconds</span>
 					</div>
-				</div> 
+				</div>
 				<div id="nottathon"></div>
 			</div>
 
 			<div class="nottathon container-about">
-				
 				<div class="about">
 					<h5>About</h5>
 					<p id="detailcontent">
-						The Nott-A-Thon: Lovelace is a programming competition organized by the Institution of
-						Engineering and Technology UNM Student Chapter. We invited teams of foundation and
-						undergraduate students in Malaysia, as an initiative to promote competitive programming
-						among students. We provide an environment for students to level up their skills and win
-						cash prizes. E-certificate and s-CPD point(only applicable to Nottingham students) will
-						be awarded after the contest.
+						The Nott-A-Thon: Lovelace is a programming competition organized by the Institution of Engineering and Technology UNM Student Chapter. We
+						invited teams of foundation and undergraduate students in Malaysia, as an initiative to promote competitive programming among students. We
+						provide an environment for students to level up their skills and win cash prizes. E-certificate and s-CPD point(only applicable to
+						Nottingham students) will be awarded after the contest.
 					</p>
 				</div>
 			</div>
-			
 
 			<div class="nottathon container-intro">
 				<div class="introduction">
 					<h5>Get familiar with <br />HackerRank environment</h5>
 					<p id="detailcontent">
-						The mock contest is created to allow all of the participants get familiar with
-						HackerRank enviroments. Please click the button below to join the mock contest.
+						The mock contest is created to allow all of the participants get familiar with HackerRank enviroments. Please click the button below to
+						join the mock contest.
 					</p>
 					<button id="mockcontest" onclick="openMockTest()">Mock Contest</button>
 				</div>
@@ -172,7 +153,7 @@
 					</p>
 				</div>
 			</div>
-			
+
 			<div class="cprt">
 				<p>© 2021 IET UNM. All Rights Reserved.</p>
 			</div>
@@ -180,24 +161,24 @@
 
 		<script src="index.js"></script>
 		<script>
-			// function getTime() {
-			// 	const total = Date.parse("January 30 2021 15:00:00 GMT+0800") - Date.parse(new Date());
-			// 	const seconds = Math.floor((total / 1000) % 60);
-			// 	const minutes = Math.floor((total / 1000 / 60) % 60);
+			function getTime() {
+				const total = Date.parse("January 30 2022 15:00:00 GMT+0800") - Date.parse(new Date());
+				const seconds = Math.floor((total / 1000) % 60);
+				const minutes = Math.floor((total / 1000 / 60) % 60);
 
-			// 	const hours = Math.floor((total / (1000 * 60 * 60)) % 24);
-			// 	const days = Math.floor(total / (1000 * 60 * 60 * 24));
-			// 	const day = document.querySelector("#day");
+				const hours = Math.floor((total / (1000 * 60 * 60)) % 24);
+				const days = Math.floor(total / (1000 * 60 * 60 * 24));
+				const day = document.querySelector("#day");
 
-			// 	const hour = document.querySelector("#hour");
-			// 	const min = document.querySelector("#min");
-			// 	const sec = document.querySelector("#sec");
-			// 	day.innerHTML = days < 10 ? "0" + days : days;
-			// 	hour.innerHTML = hours < 10 ? "0" + hours : hours;
-			// 	min.innerHTML = minutes < 10 ? "0" + minutes : minutes;
-			// 	sec.innerHTML = seconds < 10 ? "0" + seconds : seconds;
-			// }
-			// setInterval(getTime, 1000);
+				const hour = document.querySelector("#hour");
+				const min = document.querySelector("#min");
+				const sec = document.querySelector("#sec");
+				day.innerHTML = days < 10 ? "0" + days : days;
+				hour.innerHTML = hours < 10 ? "0" + hours : hours;
+				min.innerHTML = minutes < 10 ? "0" + minutes : minutes;
+				sec.innerHTML = seconds < 10 ? "0" + seconds : seconds;
+			}
+			setInterval(getTime, 1000);
 		</script>
 	</body>
 </html>
