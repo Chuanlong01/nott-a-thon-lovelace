@@ -277,6 +277,16 @@
 	padding: 5px;
 }
 
+#hollow_butt{
+	color: #fbfcfd;
+	padding: 10px 25px;
+	background: transparent;
+	border: 1px solid #fff;
+	border-radius: 20px;
+	outline: none;
+	cursor: pointer;
+}
+
 #googleform {
 	/* width: 300px;
 	height: 75px;
@@ -299,15 +309,15 @@
 	border-bottom-right-radius: 10px;
 	border-top-left-radius: 10px;
 	border-top-right-radius: 10px;
-	color: rgb(155, 155, 155);
+	color: rgb(241, 241, 241);
 	text-shadow: -1px -1px 0px rgba(255, 255, 255, 0.2), 1px 1px 2px rgba(0, 0, 0, 0.2);
-	font-family: "Audiowide", sans-serif;
+	font-family: "Audiowide", Bahnschrift SemiCondensed;
 	transition: 0.8s ease-out;
 	padding-top: 10px;
 	padding-right: 13px;
 	padding-bottom: 10px;
 	padding-left: 13px;
-	box-shadow: inset 1px 1px 2px rgba(255, 255, 255, 0.3), inset 3px 15px 45px rgba(255, 255, 255, 0.1), inset -1px -1px 2px rgba(0, 0, 0, 0.5),
+	box-shadow: inset 1px 1px 2px rgba(42, 181, 245, 0.795), inset 3px 15px 45px rgba(255, 255, 255, 0.1), inset -1px -1px 2px rgba(0, 0, 0, 0.5),
 		inset -3px -15px 45px rgba(0, 0, 0, 0.2), 1px 5px 30px -4px rgba(0, 0, 0, 1);
 	text-transform: uppercase;
 }
@@ -334,8 +344,8 @@
 	border-bottom-right-radius: 2px;
 	border-top-left-radius: 2px;
 	border-top-right-radius: 2px;
-	box-shadow: inset 1px 1px 2px rgba(136, 11, 167, 0.3), inset 3px 15px 45px rgba(0, 0, 0, 0.2), inset -1px -1px 2px rgba(0, 0, 0, 0.5),
-		inset -3px -15px 45px rgba(117, 25, 160, 0.1), 1px -1px 4px 1px #00ced1, 1px -1px 12px 3px #a000d1,
+	box-shadow: inset 1px 1px 2px rgba(136, 11, 167, 0.3), inset 3px 15px 45px rgba(86, 155, 22, 0.2), inset -1px -1px 2px rgba(0, 0, 0, 0.5),
+		inset -3px -15px 45px rgba(97, 175, 226, 0.788), 1px -1px 4px 1px #00ced1, 1px -1px 12px 3px #a000d1,
 		1px -1px 30px 4px #00ced1;
 	transition: 0.8s ease-in;
 }
@@ -651,6 +661,9 @@ h5 {
 #mockcontest:hover {
 	filter: brightness(110%);
 }
+
+
+
 .about {
 	margin-top: 50px;
 	height: auto;
@@ -1468,4 +1481,64 @@ iframe {
 	.winners:nth-child(3) > img {
 		padding-top: 50px;
 	}
+}
+
+
+/* Animations */
+.bubbles img{
+	width:50px;
+	animation: bubble 7s linear infinite;
+
+}
+.bubbles{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	position: absolute;
+	
+
+}
+@keyframes bubble{
+	0%{
+		transform: translateY(0);
+		opacity:0;
+	}
+	50%{
+		
+		opacity:1;
+	}
+	70%{
+	
+		opacity:1;
+	}
+	100%{
+		transform: translateY(-80vh);
+		opacity:0;
+	}
+}
+.bubbles img:nth-child(1){
+	animation-delay: 2s;
+	width: 25px;
+}
+.bubbles img:nth-child(2){
+	animation-delay: 1s;
+}
+.bubbles img:nth-child(3){
+	animation-delay: 3s;
+	width: 25px;
+}
+.bubbles img:nth-child(4){
+	animation-delay: 4s;
+}
+.bubbles img:nth-child(5){
+	animation-delay: 3s;
+	width: 20px;
+}
+.bubbles img:nth-child(6){
+	animation-delay: 6s;
+}
+.bubbles img:nth-child(7){
+	animation-delay: 7s;
+	width: 35px;
 }
