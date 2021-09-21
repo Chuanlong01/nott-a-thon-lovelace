@@ -986,7 +986,7 @@ h5 {
 	left:-20px;
 	width: 200px;
 	height: 200px;
-	background: linear-gradient(#33ccff, #ff0066);
+	background: linear-gradient(#33ccff, #c300ff);
 	border-radius: 50%;
 	animation: animate 2s linear infinite;
 	z-index: 0;
