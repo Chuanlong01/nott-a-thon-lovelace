@@ -9,7 +9,7 @@
 	height: auto;
 }
 .wave-edit {
-	height: auto;
+	height: 80%;
 	width: 100%;
 	position: absolute;
 	z-index: 0;
@@ -245,7 +245,7 @@
 }
 .main {
 	display: grid;
-	grid-template-columns: 60% 40%;
+	grid-template-columns: 65% 35%;
 	padding-top: 100px;
 	height: 700px;
 	color: white;
@@ -371,13 +371,16 @@
 }
 
 @media screen and (max-width: 1300px) {
+	.main {
+		height: 550px;
+	}
 	.main > .content {
 		padding-left: 80px;
 		padding-top: 50px;
 	}
 	.main > .progPic > img {
-		width: 250px;
-		height: 250px;
+		width: 220px;
+		height: 220px;
 	}
 	#line1 {
 		font-size: 55px;
@@ -391,8 +394,17 @@
 	#line6 {
 		font-size: 16px;
 	}
+	.wave-edit {
+		height: 60%;
+		width: 100%;
+		position: absolute;
+		z-index: 0;
+	}
 }
 @media screen and (max-width: 1000px) {
+	.wave-edit {
+		height: 50%;
+	}
 	.main {
 		grid-template-columns: 100%;
 		grid-template-rows: 1fr 1fr;
@@ -406,8 +418,8 @@
 	}
 	.main > .progPic > img {
 		padding-top: 20px;
-		width: 250px;
-		height: 250px;
+		width: 220px;
+		height: 220px;
 	}
 	#line1 {
 		font-size: 55px;
@@ -429,9 +441,15 @@
 	}
 }
 @media screen and (max-width: 600px) {
+	.wave-edit {
+		height: 40%;
+	}
+	.main{
+		height: 700px;
+	}
 	#line1,
 	#line2 {
-		font-size: 45px;
+		font-size: 40px;
 	}
 	#line2 {
 		font-size: 20px;
@@ -450,9 +468,9 @@
 		margin: 15px;
 	}
 	.main > .progPic > img {
-		padding-top: 20px;
-		width: 250px;
-		height: 250px;
+		width: 160px;
+		height: 160px;
+		padding-bottom: 50px;
 	}
 }
 
@@ -505,7 +523,7 @@
 	margin: auto;
 	text-align: center;
 	width: 60%;
-	background-color: rgba(0, 0, 0, 0.9);
+	/* background-color: rgba(0, 0, 0, 0.9); */
 	display: grid;
 	height: 120px;
 	grid-template-columns: repeat(7, 1fr);
@@ -518,11 +536,61 @@
 	-webkit-box-shadow: 10px 20px 30px rgba(255, 255, 255, 0.2);
 	box-shadow: 10px 20px 30px rgba(255, 255, 255, 0.2);
 }
-.time > div > p {
+.slot-container{
+	display: grid;
+	grid-template-rows:  1fr 2fr 1fr;
+}
+
+.pulse-circle {
+	border-radius: 50%;
+	background-color: deepskyblue;
+	width: 150px;
+	height: 150px;
+	position: absolute;
+	opacity: 0;
+	animation: scaleIn 4s infinite cubic-bezier(.36, .11, .89, .32);
+}
+
+@keyframes scaleIn {
+	from {
+	  transform: scale(.5, .5);
+	  opacity: .5;
+	}
+	to {
+	  transform: scale(2.0, 2.0);
+	  opacity: 0;
+	}
+}
+.light-purple{
+	background-color: rgb(203, 88, 238);
+}
+.purple{
+	background-color: rgb(204, 0, 255);
+}
+
+
+@font-face{
+	font-family:'digital-clock-font';
+	src: url('digital-7.ttf');
+}
+
+.time > div >div> p {
 	font-size: 70px;
+	font-family:'digital-clock-font';
 	display: grid;
 	align-items: baseline;
+	position:relative;
+	color:#fff;
+	text-shadow: 0 0 10px #03bcf4,
+		0 0 20px #03bcf4,
+		0 0 40px #03bcf4,
+		0 0 80px #03bcf4,
+		0 0 160px #03bcf4;	
+	outline:none;
+	text-align: center;
 }
+
+
 #label {
 	font-size: 14px;
 	color: rgba(255, 255, 255, 0.35);
