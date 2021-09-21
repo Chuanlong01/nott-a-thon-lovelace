@@ -1,187 +1,218 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=G-XR0TFDH597"></script>
-		<script>
-			window.dataLayer = window.dataLayer || [];
-			function gtag() {
-				dataLayer.push(arguments);
-			}
-			gtag("js", new Date());
 
-			gtag("config", "G-XR0TFDH597");
-		</script>
-		<title>Nott-A-Thon: Turing</title>
-		<meta charset="utf-8" />
-		<meta name="icon" content="" />
-		<link rel="apple-touch-icon" sizes="180x180" href="favicon_Black/apple-touch-icon.png" />
-		<link rel="icon" type="image/png" sizes="32x32" href="favicon_Black/favicon-32x32.png" />
-		<link rel="icon" type="image/png" sizes="16x16" href="favicon_Black/favicon-16x16.png" />
-		<link rel="manifest" href="favicon_Black/site.webmanifest" />
-		<meta
-			name="description"
-			content="The Nott-A-Thon: Lovelace is a programming competition organized
+<head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-XR0TFDH597"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag("js", new Date());
+
+		gtag("config", "G-XR0TFDH597");
+	</script>
+	<title>Nott-A-Thon: Turing</title>
+	<meta charset="utf-8" />
+	<meta name="icon" content="" />
+	<link rel="apple-touch-icon" sizes="180x180" href="favicon_Black/apple-touch-icon.png" />
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon_Black/favicon-32x32.png" />
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon_Black/favicon-16x16.png" />
+	<link rel="manifest" href="favicon_Black/site.webmanifest" />
+	<meta name="description" content="The Nott-A-Thon: Lovelace is a programming competition organized
 		by the IET UNM Student Chapter. We invited teams of foundation and undergraduate students in
-		Malaysia. The comnpetition is hosted on HackerRank."
-		/>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<script src="https://kit.fontawesome.com/a076d05399.js"></script>
-		<link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@600&display=swap" rel="stylesheet" />
-		<link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital@1&family=Sansita+Swashed:wght@600&display=swap" rel="stylesheet" />
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-		<link rel="stylesheet" href="style.css" />
-		<link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
+		Malaysia. The comnpetition is hosted on HackerRank." />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@600&display=swap" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital@1&family=Sansita+Swashed:wght@600&display=swap"
+		rel="stylesheet" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="style.css" />
+	<link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
 
-	</head>
-	<body>
-		<nav class="all">
-			<img class="wave-edit" src="wave.png" />
-			<div class="menu">
-				<button aria-expanded="false" aria-controls="menu-list">
-					<div id="bar1"></div>
-					<div id="bar2"></div>
-					<div id="bar3"></div>
+</head>
+
+<body>
+	<nav class="all">
+		<img class="wave-edit" src="wave.png" />
+		<div class="menu">
+			<button aria-expanded="false" aria-controls="menu-list">
+				<div id="bar1"></div>
+				<div id="bar2"></div>
+				<div id="bar3"></div>
+			</button>
+
+			<div class="logo">
+				<a class="logo1" href="index.html"><img src="iet.png" alt="IET UNM" /></a>
+				<a class="logo2" href="index.html"><img src="nott.jpg" alt="University of Nottingham Malaysia" /></a>
+			</div>
+			<a class="name" href="#nottathon">Nott-A-Thon: Turing</a>
+			<a class="rules" href="officialrules.html">Official Rules</a>
+			<a class="contributor" href="contributor.html">Contributors</a>
+			<a class="faqs" href="faq.html">FAQs</a>
+			<a class="result" href="result.html" onclick="popOut()">Results</a>
+			<a href="#" onclick="openFB()" class="facebook">
+				<div class="fb">f</div>
+			</a>
+			<a href="#" onclick="openInsta()" class="insta"><i class="fa fa-instagram"></i></a>
+		</div>
+		<div class="main">
+			<div class="content">
+				<p id="line1">Nott-A-Thon: Lovelace</p>
+				<p id="line2">2 Hours Algorithms Challenges</p>
+				<p id="line3">Presented by IET UNM Student Chapter</p>
+				<p id="line4">12th of February 2021</p>
+				<p id="line5">hosted on HackerRank</p>
+				<p id="line6">Maximum 3 people per group</p>
+				<button id="googleform" onclick="googleform()" title="CLick me to sign up in the google form">
+					<span>Register Now</span>
 				</button>
-
-				<div class="logo">
-					<a class="logo1" href="index.html"><img src="iet.png" alt="IET UNM" /></a>
-					<a class="logo2" href="index.html"><img src="nott.jpg" alt="University of Nottingham Malaysia" /></a>
-				</div>
-				<a class="name" href="#nottathon">Nott-A-Thon: Turing</a>
-				<a class="rules" href="officialrules.html">Official Rules</a>
-				<a class="contributor" href="contributor.html">Contributors</a>
-				<a class="faqs" href="faq.html">FAQs</a>
-				<a class="result" href="result.html" onclick="popOut()">Results</a>
-				<a href="#" onclick="openFB()" class="facebook"><div class="fb">f</div></a>
-				<a href="#" onclick="openInsta()" class="insta"><i class="fa fa-instagram"></i></a>
 			</div>
-			<div class="main">
-				<div class="content">
-					<p id="line1">Nott-A-Thon: Lovelace</p>
-					<p id="line2">2 Hours Algorithms Challenges</p>
-					<p id="line3">Presented by IET UNM Student Chapter</p>
-					<p id="line4">12th of February 2021</p>
-					<p id="line5">hosted on HackerRank</p>
-					<p id="line6">Maximum 3 people per group</p>
-					<button id="googleform" onclick="googleform()" title="CLick me to sign up in the google form">
-						<span>Register Now</span>
-					</button>
-				</div>
-				<div class="progPic"><img src="new_pic/hacker_white.png" alt="Programming dude" /></div>
-			</div>
-			<div class="countdown">
-				<!--<h2 class="topicCountdown">Challenges Solutions</h2>
+			<div class="progPic"><img src="new_pic/hacker_white.png" alt="Programming dude" /></div>
+		</div>
+		<div class="countdown">
+			<!--<h2 class="topicCountdown">Challenges Solutions</h2>
 				<h3 class="topicCountdown">The competition is over, hope to see you next year!</h3>
 
 				<a class="solution" href="NottAThonTuringSolution.zip" download>Click here to download the solution</a>-->
-				<div class="time">
-					<div class="day">
-						<p id="day">00</p>
-						<br /><span id="label">Days</span>
-					</div>
-					<div id="colon">:</div>
-					<div class="hour">
-						<p id="hour">00</p>
-						<br /><span id="label">Hours</span>
-					</div>
-					<div id="colon">:</div>
-					<div class="min">
-						<p id="min">00</p>
-						<br /><span id="label">Minutes</span>
-					</div>
-					<div id="colon">:</div>
-					<div class="sec">
-						<p id="sec">00</p>
-						<br /><span id="label">Seconds</span>
-					</div>
+			<div class="time">
+				<div class="day slot-container">
+					<section>
+						<div class="pulse-circle" style="animation-delay: 0s"></div>
+						<div class="pulse-circle" style="animation-delay: 1s"></div>
+						<div class="pulse-circle light-purple" style="animation-delay: 2s"></div>
+						<div class="pulse-circle purple" style="animation-delay: 3s"></div>
+					</section>
+					<div><p id="day">00</p></div>
+					<div><span id="label">Days</span></div>
 				</div>
-				<div id="nottathon"></div>
-			</div>
-
-			<div class="nottathon container-about">
-				<div class="about">
-					<h5>About</h5>
-					<p id="detailcontent">
-						The Nott-A-Thon: Lovelace is a programming competition organized by the Institution of Engineering and Technology UNM Student Chapter. We
-						invited teams of foundation and undergraduate students in Malaysia, as an initiative to promote competitive programming among students. We
-						provide an environment for students to level up their skills and win cash prizes. E-certificate and s-CPD point(only applicable to
-						Nottingham students) will be awarded after the contest.
-					</p>
+				<div id="colon">:</div>
+				<div class="hour slot-container">
+					<section>
+						<div class="pulse-circle" style="animation-delay: 0s"></div>
+						<div class="pulse-circle" style="animation-delay: 1s"></div>
+						<div class="pulse-circle light-purple" style="animation-delay: 2s"></div>
+						<div class="pulse-circle purple" style="animation-delay: 3s"></div>
+					</section>
+					<div><p id="hour">00</p></div>
+					<div><span id="label">Hours</span></div>
 				</div>
-			</div>
-			
-
-			<div class="nottathon container-intro">
-				<div class="introduction">
-					<h5>Get familiar with <br />HackerRank environment</h5>
-					<p id="detailcontent">
-						The mock contest is created to allow all of the participants get familiar with HackerRank enviroments. Please click the button below to
-						join the mock contest.
-					</p>
-					<button id="mockcontest" onclick="openMockTest()">Mock Contest</button>
+				<div id="colon">:</div>
+				<div class="min slot-container">
+					<section>
+						<div class="pulse-circle" style="animation-delay: 0s"></div>
+						<div class="pulse-circle" style="animation-delay: 1s"></div>
+						<div class="pulse-circle light-purple" style="animation-delay: 2s"></div>
+						<div class="pulse-circle purple" style="animation-delay: 3s"></div>
+					</section>
+					<div><p id="min">00</p></div>
+					<div><span id="label">Minutes</span></div>
+				</div>
+				<div id="colon">:</div>
+				<div class="sec slot-container">
+					<section>
+						<div class="pulse-circle" style="animation-delay: 0s"></div>
+						<div class="pulse-circle" style="animation-delay: 1s"></div>
+						<div class="pulse-circle light-purple" style="animation-delay: 2s"></div>
+						<div class="pulse-circle purple" style="animation-delay: 3s"></div>
+					</section>
+					<div><p id="sec">00</p></div>
+					<div><span id="label">Seconds</span></div>
 				</div>
 			</div>
+			<div id="nottathon"></div>
+		</div>
 
-			<div class="nottathon container-prize">
-				<div class="prize">
-					<h5>Prizes</h5>
-					<div id="detailcontent">
-						<div class="second">
-							<img src="pic/Trophy Icons Silver.png" alt="Silver Trophy" />
-							<h6>1st Runner Up</h6>
-							<p>RM 60 cash<br />RM 100 Printcious <br />E-vouchers</p>
-						</div>
-						<div class="first glow">
-							<img src="pic/Trophy Icons Gold.png" alt="Gold Trophy" />
-							<h6>Champion</h6>
-							<p>RM 120 cash<br />RM 200 Printcious <br />E-vouchers</p>
-						</div>
-						<div class="third">
-							<img src="pic/Trophy Icons Bronze.png" alt="Bronze Trophy" />
-							<h6>2nd Runner Up</h6>
-							<p>RM 30 cash<br />RM 50 Printcious <br />E-vouchers</p>
-						</div>
+		<div class="nottathon container-about">
+			<div class="about">
+				<h5>About</h5>
+				<p id="detailcontent">
+					The Nott-A-Thon: Lovelace is a programming competition organized by the Institution of Engineering
+					and Technology UNM Student Chapter. We
+					invited teams of foundation and undergraduate students in Malaysia, as an initiative to promote
+					competitive programming among students. We
+					provide an environment for students to level up their skills and win cash prizes. E-certificate and
+					s-CPD point(only applicable to
+					Nottingham students) will be awarded after the contest.
+				</p>
+			</div>
+		</div>
+
+
+		<div class="nottathon container-intro">
+			<div class="introduction">
+				<h5>Get familiar with <br />HackerRank environment</h5>
+				<p id="detailcontent">
+					The mock contest is created to allow all of the participants get familiar with HackerRank
+					enviroments. Please click the button below to
+					join the mock contest.
+				</p>
+				<button id="mockcontest" onclick="openMockTest()">Mock Contest</button>
+			</div>
+		</div>
+
+		<div class="nottathon container-prize">
+			<div class="prize">
+				<h5>Prizes</h5>
+				<div id="detailcontent">
+					<div class="second">
+						<img src="pic/Trophy Icons Silver.png" alt="Silver Trophy" />
+						<h6>1st Runner Up</h6>
+						<p>RM 60 cash<br />RM 100 Printcious <br />E-vouchers</p>
+					</div>
+					<div class="first glow">
+						<img src="pic/Trophy Icons Gold.png" alt="Gold Trophy" />
+						<h6>Champion</h6>
+						<p>RM 120 cash<br />RM 200 Printcious <br />E-vouchers</p>
+					</div>
+					<div class="third">
+						<img src="pic/Trophy Icons Bronze.png" alt="Bronze Trophy" />
+						<h6>2nd Runner Up</h6>
+						<p>RM 30 cash<br />RM 50 Printcious <br />E-vouchers</p>
 					</div>
 				</div>
 			</div>
+		</div>
 
-			<div class="nottathon container-detail">
-				<div class="detail">
-					<h5>Time and Platform</h5>
-					<p>
-						30th January 2021<br />
-						3.00 p.m. - 5.00 p.m.<br />
-						Hackerrank.com
-					</p>
-				</div>
+		<div class="nottathon container-detail">
+			<div class="detail">
+				<h5>Time and Platform</h5>
+				<p>
+					30th January 2021<br />
+					3.00 p.m. - 5.00 p.m.<br />
+					Hackerrank.com
+				</p>
 			</div>
+		</div>
 
-			<div class="cprt">
-				<p>© 2021 IET UNM. All Rights Reserved.</p>
-			</div>
-		</nav>
+		<div class="cprt">
+			<p>© 2021 IET UNM. All Rights Reserved.</p>
+		</div>
+	</nav>
 
-		<script src="index.js"></script>
-		<script>
-			function getTime() {
-				const total = Date.parse("January 30 2022 15:00:00 GMT+0800") - Date.parse(new Date());
-				const seconds = Math.floor((total / 1000) % 60);
-				const minutes = Math.floor((total / 1000 / 60) % 60);
+	<script src="index.js"></script>
+	<script>
+		function getTime() {
+			const total = Date.parse("January 30 2022 15:00:00 GMT+0800") - Date.parse(new Date());
+			const seconds = Math.floor((total / 1000) % 60);
+			const minutes = Math.floor((total / 1000 / 60) % 60);
 
-				const hours = Math.floor((total / (1000 * 60 * 60)) % 24);
-				const days = Math.floor(total / (1000 * 60 * 60 * 24));
-				const day = document.querySelector("#day");
+			const hours = Math.floor((total / (1000 * 60 * 60)) % 24);
+			const days = Math.floor(total / (1000 * 60 * 60 * 24));
+			const day = document.querySelector("#day");
 
-				const hour = document.querySelector("#hour");
-				const min = document.querySelector("#min");
-				const sec = document.querySelector("#sec");
-				day.innerHTML = days < 10 ? "0" + days : days;
-				hour.innerHTML = hours < 10 ? "0" + hours : hours;
-				min.innerHTML = minutes < 10 ? "0" + minutes : minutes;
-				sec.innerHTML = seconds < 10 ? "0" + seconds : seconds;
-			}
-			setInterval(getTime, 1000);
-		</script>
-	</body>
+			const hour = document.querySelector("#hour");
+			const min = document.querySelector("#min");
+			const sec = document.querySelector("#sec");
+			day.innerHTML = days < 10 ? "0" + days : days;
+			hour.innerHTML = hours < 10 ? "0" + hours : hours;
+			min.innerHTML = minutes < 10 ? "0" + minutes : minutes;
+			sec.innerHTML = seconds < 10 ? "0" + seconds : seconds;
+		}
+		setInterval(getTime, 1000);
+	</script>
+</body>
+
 </html>
