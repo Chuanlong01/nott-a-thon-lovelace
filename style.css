@@ -5,14 +5,14 @@
 
 .all {
 	/*background-image: linear-gradient(to right, rgb(12, 1, 20), rgb(67, 2, 90), rgb(91, 5, 153), rgb(60, 3, 151), rgb(27, 2, 119));*/
-	background-image: linear-gradient(to right, rgb(12, 1, 20),rgb(14, 2, 41));
+	background-image: linear-gradient(to right, rgb(12, 1, 20), rgb(31, 9, 78));
 	height: auto;
 }
-.wave-edit{
+.wave-edit {
 	height: auto;
 	width: 100%;
 	position: absolute;
-	z-index:0;
+	z-index: 0;
 }
 .menu {
 	position: fixed;
@@ -34,7 +34,7 @@
 	display: none;
 }
 .scrolldown {
-	background-color: rgba(253, 250, 250, 0.5);
+	background-color: rgba(253, 250, 250, 0.9);
 	transition: all 0.5s;
 }
 .scrolldown.fb {
@@ -61,19 +61,19 @@
 .menu > a:hover {
 	color: rgb(246, 246, 190) !important;
 }
-.menu > a::after{
-    content:"";
-    width: 0%;
-    height: 2px;
-    background: #e062ff;
-    display: block;
-    margin: auto;
+.menu > a::after {
+	content: "";
+	width: 0%;
+	height: 2px;
+	background: #e062ff;
+	display: block;
+	margin: auto;
 	margin-top: 10px;
-    transition: 0.5s;
+	transition: 0.5s;
 }
 
-.menu > a:hover::after{
-    width:100%;
+.menu > a:hover::after {
+	width: 100%;
 }
 
 .menu.scrolldown > a:hover {
@@ -278,7 +278,7 @@
 }
 
 #googleform {
-	width: 300px;
+	/* width: 300px;
 	height: 75px;
 	border: none;
 	background-color: pink;
@@ -286,9 +286,30 @@
 	margin: 30px;
 	font-family: "PT Sans", sans-serif;
 	transition: all 0.5s;
-  	cursor: pointer;
-	border-radius: 5%;
-	border: 5px solid #3b0349;
+	cursor: pointer;
+	border-radius: 2%;
+	border: 5px solid #3b0349; */
+	cursor: pointer;
+	min-height: 20px;
+	background: #25292c;
+	margin: 30px;
+	text-align: center;
+	line-height: 30px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	color: rgb(155, 155, 155);
+	text-shadow: -1px -1px 0px rgba(255, 255, 255, 0.2), 1px 1px 2px rgba(0, 0, 0, 0.2);
+	font-family: "Audiowide", sans-serif;
+	transition: 0.8s ease-out;
+	padding-top: 10px;
+	padding-right: 13px;
+	padding-bottom: 10px;
+	padding-left: 13px;
+	box-shadow: inset 1px 1px 2px rgba(255, 255, 255, 0.3), inset 3px 15px 45px rgba(255, 255, 255, 0.1), inset -1px -1px 2px rgba(0, 0, 0, 0.5),
+		inset -3px -15px 45px rgba(0, 0, 0, 0.2), 1px 5px 30px -4px rgba(0, 0, 0, 1);
+	text-transform: uppercase;
 }
 #googleform span {
 	cursor: pointer;
@@ -297,7 +318,7 @@
 	transition: 0.5s;
 }
 #googleform span:after {
-	content: '\00bb';
+	content: "\00bb";
 	font-size: 22px;
 	position: absolute;
 	opacity: 0;
@@ -306,26 +327,33 @@
 	transition: 0.5s;
 }
 #googleform:hover {
-	background-color: rgb(228, 85, 241);
+	/* background-color: rgb(228, 85, 241);
 	transition: all 0.5s;
-	filter: brightness(120%);
+	filter: brightness(120%); */
+	border-bottom-left-radius: 2px;
+	border-bottom-right-radius: 2px;
+	border-top-left-radius: 2px;
+	border-top-right-radius: 2px;
+	box-shadow: inset 1px 1px 2px rgba(136, 11, 167, 0.3), inset 3px 15px 45px rgba(0, 0, 0, 0.2), inset -1px -1px 2px rgba(0, 0, 0, 0.5),
+		inset -3px -15px 45px rgba(117, 25, 160, 0.1), 1px -1px 4px 1px #00ced1, 1px -1px 12px 3px #a000d1,
+		1px -1px 30px 4px #00ced1;
+	transition: 0.8s ease-in;
 }
-  
+
 #googleform:hover span {
 	padding-right: 25px;
 }
-  
+
 #googleform:hover span:after {
 	opacity: 1;
 	right: 0;
 }
 
-
 .main > .progPic {
 	display: grid;
 	justify-content: center;
 	align-items: center;
-	z-index:1;
+	z-index: 1;
 }
 .main > .progPic > img {
 	width: 250px;
@@ -344,7 +372,7 @@
 	#line1 {
 		font-size: 55px;
 	}
-	#line2{
+	#line2 {
 		font-size: 20px;
 	}
 	#line3,
@@ -374,7 +402,7 @@
 	#line1 {
 		font-size: 55px;
 	}
-	#line2{
+	#line2 {
 		font-size: 20px;
 	}
 	#line3,
@@ -433,8 +461,7 @@
 	color: whitesmoke;
 	position: relative;
 	font-weight: 600;
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
-		"Open Sans", "Helvetica Neue", sans-serif;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 .topicCountdown:nth-child(1) {
 	font-size: 35px;
@@ -468,7 +495,7 @@
 	margin: auto;
 	text-align: center;
 	width: 60%;
-	background-color: rgba(0, 0, 0, 0.8);
+	background-color: rgba(0, 0, 0, 0.9);
 	display: grid;
 	height: 120px;
 	grid-template-columns: repeat(7, 1fr);
@@ -476,7 +503,10 @@
 	justify-content: space-around;
 	padding: 50px;
 	font-family: "Montserrat", "sans-serif";
-	border: 2px solid white;
+	/* border: 2px solid white; */
+	-moz-box-shadow: 10px 20px 30px rgba(255, 255, 255, 0.2);
+	-webkit-box-shadow: 10px 20px 30px rgba(255, 255, 255, 0.2);
+	box-shadow: 10px 20px 30px rgba(255, 255, 255, 0.2);
 }
 .time > div > p {
 	font-size: 70px;
@@ -569,16 +599,16 @@
 	padding-bottom: 100px;
 }
 .container-about {
-	background-color: rgba(58, 3, 104, 0.8);
+	background-color: rgba(0, 0, 0, 0.8);
 }
 .container-intro {
-	background-color: rgb(14, 2, 41, 0.8);
+	background-color: rgba(0, 0, 0, 0.8);
 }
 .container-prize {
-	background-color: rgba(58, 3, 104, 0.8);
+	background-color: rgba(0, 0, 0, 0.8);
 }
 .container-detail {
-	background-color: rgb(14, 2, 41, 0.8);
+	background-color: rgba(0, 0, 0, 0.8);
 }
 h5 {
 	font-family: serif;
@@ -596,18 +626,17 @@ h5 {
 	line-height: 150%;
 }
 
-.glow{ 
-    animation: glow 1s ease-in-out infinite alternate;
-   
+.glow {
+	animation: glow 1s ease-in-out infinite alternate;
 }
 
 @keyframes glow {
-    from {
-        text-shadow: 0 0 10px rgb(19, 19, 19), 0 0 20px #ffb84d, 0 0 30px #ffed4d;
-    }
-    to {
-        text-shadow: 0 0 10px rgb(19, 19, 19), 0 0 20px #f0e006, 0 0 40px #ffed4d, 0 0 60px #ffed4d;
-    }
+	from {
+		text-shadow: 0 0 10px rgb(19, 19, 19), 0 0 20px #ffb84d, 0 0 30px #ffed4d;
+	}
+	to {
+		text-shadow: 0 0 10px rgb(19, 19, 19), 0 0 20px #f0e006, 0 0 40px #ffed4d, 0 0 60px #ffed4d;
+	}
 }
 #mockcontest {
 	text-align: center;
@@ -967,7 +996,7 @@ h5 {
 	color: rgb(255, 234, 118);
 	font-size: 26px;
 	/*added font family*/
-	font-family:fantasy;
+	font-family: fantasy;
 	padding: 30px 0;
 }
 
@@ -977,13 +1006,13 @@ h5 {
 	padding-bottom: 100px;
 }
 .boss > div {
-	position:relative;
+	position: relative;
 }
 
-.boss > div >.circle{
-	position:absolute;
-	top:-20px;
-	left:-20px;
+.boss > div > .circle {
+	position: absolute;
+	top: -20px;
+	left: -20px;
 	width: 200px;
 	height: 200px;
 	background: linear-gradient(#33ccff, #c300ff);
@@ -993,10 +1022,10 @@ h5 {
 }
 
 @keyframes animate {
-	from{
+	from {
 		transform: rotate(0deg);
 	}
-	to{
+	to {
 		transform: rotate(360deg);
 	}
 }
@@ -1018,7 +1047,7 @@ h5 {
 	.iet > .profile {
 		grid-template-columns: repeat(3, minmax(260px, 1fr));
 	}
-	
+
 	.boss > .position {
 		padding-bottom: 50px;
 	}
