@@ -526,11 +526,27 @@
 	-webkit-box-shadow: 10px 20px 30px rgba(255, 255, 255, 0.2);
 	box-shadow: 10px 20px 30px rgba(255, 255, 255, 0.2);
 }
+@font-face{
+	font-family:'digital-clock-font';
+	src: url('digital-7.ttf');
+}
+
 .time > div > p {
 	font-size: 70px;
+	font-family:'digital-clock-font';
 	display: grid;
 	align-items: baseline;
+	position:relative;
+	color:#fff;
+	text-shadow: 0 0 10px #03bcf4,
+		0 0 20px #03bcf4,
+		0 0 40px #03bcf4,
+		0 0 80px #03bcf4,
+		0 0 160px #03bcf4;	
+	outline:none;
+	text-align: center;
 }
+
 #label {
 	font-size: 14px;
 	color: rgba(255, 255, 255, 0.35);
