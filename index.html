@@ -13,7 +13,7 @@
 
 		gtag("config", "G-XR0TFDH597");
 	</script>
-	<title>Nott-A-Thon: Turing</title>
+	<title>Nott-A-Thon: Lovelace</title>
 	<meta charset="utf-8" />
 	<meta name="icon" content="" />
 	<link rel="apple-touch-icon" sizes="180x180" href="favicon_Black/apple-touch-icon.png" />
@@ -36,7 +36,8 @@
 
 <body>
 	<nav class="all">
-		<img class="wave-edit" src="wave.png" />
+		
+	
 		<div class="menu">
 			<button aria-expanded="false" aria-controls="menu-list">
 				<div id="bar1"></div>
@@ -67,19 +68,90 @@
 				<p id="line4">12th of February 2021</p>
 				<p id="line5">hosted on HackerRank</p>
 				<p id="line6">Maximum 3 people per group</p>
+				<!--
 				<button id="hollow_butt" onclick="googleform()" title="CLick me to sign up in the google form">
 					<span>Register Now</span>
 				</button>
-				<button id="googleform" onclick="googleform()" title="CLick me to sign up in the google form">
-					<span>Register Now</span>
-				</button>
+
 				<div class="power_butt">
 						<a href="#" onclick="googleform()" title="CLick me to sign up in the google form"><span>Register Now</span></a>
 		
 				</div>
 
+				-->
+			
+				<button id="googleform" onclick="googleform()" title="CLick me to sign up in the google form">
+					<span>Register Now</span>
+				</button>
+
+
 			</div>
-			<div class="progPic"><img src="new_pic/hacker_white.png" alt="Programming dude" /></div>
+			<div class="main_anime">
+				<div class= "earth"></div>
+				<div class="txt_ring" data-splitting>
+					-Nott-A-Thon>>>>Lovelace-2022-
+				</div>
+				<script src="splitting.js"></script>
+				<script>Splitting();</script>
+				<script>
+					let txt_ring = document.querySelector('.txt_ring')
+					window.onmousemove = function(e){
+					let x = e.clientX/-20;
+					txt_ring.style.transform = "perspective(1000px) rotateY(" + x + "deg) rotateX(15deg)";
+					}
+				</script>
+
+				<script>
+					let txt_ring = document.querySelector('.txt_ring')
+					document.addEventListener('touchstart', handleTouchStart, false);        
+					document.addEventListener('touchmove', handleTouchMove, false);
+
+					var xDown = null;                                                        
+					var yDown = null;
+
+					function getTouches(evt) {
+					return evt.touches ||             // browser API
+							evt.originalEvent.touches; // jQuery
+					}                                                     
+																							
+					function handleTouchStart(evt) {
+						const firstTouch = getTouches(evt)[0];                                      
+						xDown = firstTouch.clientX;                                      
+						yDown = firstTouch.clientY;                                      
+					};                                                
+																							
+					function handleTouchMove(evt) {
+						if ( ! xDown || ! yDown ) {
+							return;
+						}
+
+						var xUp = evt.touches[0].clientX;                                    
+						var yUp = evt.touches[0].clientY;
+
+						var xDiff = xDown - xUp;
+						var yDiff = yDown - yUp;
+																							
+						if ( Math.abs( xDiff ) > Math.abs( yDiff ) ) {/*most significant*/
+							if ( xDiff > 0 ) {
+								/* right swipe */ 
+								txt_ring.style.transform = "perspective(1000px) rotateY(100deg) rotateX(15deg)";
+							} else {
+								/* left swipe */
+								txt_ring.style.transform = "perspective(1000px) rotateY(-100deg) rotateX(15deg)";
+							}                       
+						} else {
+							if ( yDiff > 0 ) {
+								/* down swipe */ 
+							} else { 
+								/* up swipe */
+							}                                                                 
+						}
+						/* reset values */
+						xDown = null;
+						yDown = null;                                             
+					};
+				</script>
+			</div>
 		</div>
 		<div class="countdown">
 			<!--<h2 class="topicCountdown">Challenges Solutions</h2>
@@ -147,6 +219,7 @@
 					s-CPD point(only applicable to
 					Nottingham students) will be awarded after the contest.
 				</p>
+				<!--
 				<div class="bubbles">
 					<img src="animation graphics/bubble.png">
 					<img src="animation graphics/bubble.png">
@@ -157,7 +230,7 @@
 					<img src="animation graphics/bubble.png">
 
 				</div>
-
+				-->
 			</div>
 		</div>
 
