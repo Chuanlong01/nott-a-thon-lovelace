@@ -1699,3 +1699,107 @@ iframe {
 	box-shadow: -5px 0 0 rgb(204, 0, 255), -5px 0 0 rgb(204, 0, 255);
 	transition-delay: 0s 0.5s 0.5s 0.5s;
 }
+
+/*Main Animation*/
+.main_anime
+{
+	margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+	box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    transform-style: preserve-3d; 
+   
+}
+
+.earth
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    height: 300px;
+    width: 300px;
+    background: url(Earth.jpg);
+    background-size: cover;
+    background-repeat: repeat-x;
+    border-radius: 50%;
+    box-shadow: inset 0 0 20px rgba(0,0,0,1),
+    0 0 50px #4069ff;
+    /*animation: animateEarth 15s linear infinite;*/
+}
+
+@keyframes animateEarth
+{
+ 0%
+ {
+     background-position: 0 0;
+ }  
+ 100%
+ {
+     background-position: 750px 0;
+     
+ }   
+}
+
+.txt_ring
+{
+	
+    transform-style: preserve-3d;
+    /*animation: animateRing 8s linear infinite;*/
+    
+}
+.txt_ring span::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(20, 41, 236);
+    transform: translateZ(-5px);
+
+}
+.txt_ring .char
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgb(91, 13, 143);
+    color: #fdfeff;
+    font-size: 4em;
+    padding: 5px 12px;
+    border-top: 4px solid #eb0000;
+    border-bottom: 4px solid #f70000;
+    transform-style: preserve-3d;
+    transform-origin: center;
+    transform: rotateY(calc(var(--char-index)*12deg))
+    translateZ(250px);
+    text-shadow: 500px 150px 10px rgba(255,255,255,0.5), 
+    300px 150px 0 rgba(255,255,255,0.5),
+    600px 50px 0 rgba(255,255,255,0.5),
+    500px -150px 10px rgba(255,255,255,0.5), 
+    300px -150px 0 rgba(255,255,255,0.5);
+}
+
+
+
+@keyframes animateRing 
+{
+    0%
+    {
+        transform: perspective(1000px) rotateY(360deg) rotateX(15deg) 
+        translateY(-30px);
+    }
+    100%
+    {
+        transform: perspective(1000px) rotateY(0deg) rotateX(15deg) 
+        translateY(-30px);
+    }
+}
