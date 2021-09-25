@@ -300,25 +300,28 @@
 	border-radius: 2%;
 	border: 5px solid #3b0349; */
 	cursor: pointer;
-	min-height: 20px;
-	background: #25292c;
+	min-height: 30px;
+	background: transparent;
 	margin: 30px;
 	text-align: center;
 	line-height: 30px;
-	border-bottom-left-radius: 10px;
-	border-bottom-right-radius: 10px;
-	border-top-left-radius: 10px;
-	border-top-right-radius: 10px;
+	border-color: rgb(252, 252, 252);
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
 	color: rgb(241, 241, 241);
 	text-shadow: -1px -1px 0px rgba(255, 255, 255, 0.2), 1px 1px 2px rgba(0, 0, 0, 0.2);
-	font-family: "Audiowide", Bahnschrift SemiCondensed;
+	font-family: "Tahoma", fantasy;
 	transition: 0.8s ease-out;
 	padding-top: 10px;
 	padding-right: 13px;
 	padding-bottom: 10px;
 	padding-left: 13px;
-	box-shadow: inset 1px 1px 2px rgba(42, 181, 245, 0.795), inset 3px 15px 45px rgba(255, 255, 255, 0.1), inset -1px -1px 2px rgba(0, 0, 0, 0.5),
+	/*
+	box-shadow: inset 1px 1px 2px rgba(240, 242, 243, 0.795), inset 3px 15px 45px rgba(255, 255, 255, 0.1), inset -1px -1px 2px rgba(0, 0, 0, 0.5),
 		inset -3px -15px 45px rgba(0, 0, 0, 0.2), 1px 5px 30px -4px rgba(0, 0, 0, 1);
+		*/
 	text-transform: uppercase;
 }
 #googleform span {
@@ -344,9 +347,9 @@
 	border-bottom-right-radius: 2px;
 	border-top-left-radius: 2px;
 	border-top-right-radius: 2px;
-	box-shadow: inset 1px 1px 2px rgba(136, 11, 167, 0.3), inset 3px 15px 45px rgba(86, 155, 22, 0.2), inset -1px -1px 2px rgba(0, 0, 0, 0.5),
-		inset -3px -15px 45px rgba(97, 175, 226, 0.788), 1px -1px 4px 1px #00ced1, 1px -1px 12px 3px #a000d1,
-		1px -1px 30px 4px #00ced1;
+	box-shadow: inset 1px 1px 2px rgba(104, 9, 141, 0.3), inset 3px 15px 45px rgba(59, 107, 197, 0.2), inset -1px -1px 2px rgba(205, 100, 214, 0.425),
+		inset -3px -15px 45px rgba(113, 28, 192, 0.747), 1px -1px 4px 1px #d194dd, 1px -1px 12px 3px #dbb7e6,
+		1px -1px 30px 4px #ffffff;
 	transition: 0.8s ease-in;
 }
 
