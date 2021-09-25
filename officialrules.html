@@ -35,47 +35,129 @@
 			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
 		/>
 		<link rel="stylesheet" href="style.css" />
+
+		<style>
+			body {
+			  margin: 0;
+			  font-family: "Lato", sans-serif;
+			  background: linear-gradient(to right, rgb(12, 1, 20), rgb(31, 9, 78));
+			  
+			}
+			
+			.sidebar {
+			  margin: 0;
+			  padding: 0;
+			  width: 200px;
+			  background: linear-gradient(to right, rgb(31, 9, 78), rgb(46, 11, 122));
+			  position: fixed;
+			  height: 100%;
+			  overflow: auto;
+			}
+			
+			.sidebar a {
+			  display: block;
+			  color: rgb(255, 255, 255);
+			  padding: 16px;
+			  text-decoration: none;
+			}
+			 
+			.sidebar a.active {
+			  background-color: #0407aa;
+			  color: white;
+			}
+			
+			.sidebar a:hover:not(.active) {
+			  background-color: #555;
+			  color: white;
+			}
+			
+			div.content {
+			  margin-left: 200px;
+			  padding: 1px 16px;
+			  height: 1000px;
+			  color: cornsilk;
+			}
+			
+			@media screen and (max-width: 700px) {
+			  .sidebar {
+				width: 100%;
+				height: auto;
+				position: relative;
+			  }
+			  .sidebar a {float: left;}
+			  div.content {margin-left: 0;}
+			}
+			
+			@media screen and (max-width: 400px) {
+			  .sidebar a {
+				text-align: center;
+				float: none;
+			  }
+			}
+			</style>
 	</head>
 	<body>
-		<nav class="all">
-			<div class="menu">
-				<button aria-expanded="false" aria-controls="menu-list">
-					<div id="bar1"></div>
-					<div id="bar2"></div>
-					<div id="bar3"></div>
-				</button>
-				<div class="logo">
-					<a class="logo1" href="index.html"><img src="iet.png" alt="IET UNM" /></a>
-					<a class="logo2" href="index.html"
-						><img src="nott.jpg" alt="University of Nottingham Malaysia"
-					/></a>
-				</div>
-				<a class="name" href="index.html">Nott-A-Thon: Turing</a>
-				<a class="rules" href="#">Official Rules</a>
-				<a class="contributor" href="contributor.html">Contributors</a>
-				<a class="faqs" href="faq.html">FAQs</a>
-				<a class="result" href="result.html" onclick="popOut()">Results</a>
-				<a href="#" onclick="openFB()" class="facebook"><div class="fb">f</div></a>
-				<a href="#" onclick="openInsta()" class="insta"><i class="fa fa-instagram"></i></a>
+	
+		<div class="menu">
+			<button aria-expanded="false" aria-controls="menu-list">
+				<div id="bar1"></div>
+				<div id="bar2"></div>
+				<div id="bar3"></div>
+			</button>
+			<div class="logo">
+				<a class="logo1" href="index.html"><img src="iet.png" alt="IET UNM" /></a>
+				<a class="logo2" href="index.html"
+					><img src="nott.jpg" alt="University of Nottingham Malaysia"
+				/></a>
 			</div>
-			<div class="background"></div>
-			<div class="officialRules">Rule Book</div>
-			<div class="iframe">
-				<iframe
-					class="scribd_iframe_embed"
-					title="Nottathon Rule Book"
-					src="https://www.scribd.com/embeds/491101765/content?start_page=1&view_mode=scroll&access_key=key-D4U2MEaQYf5KcasblyrB"
-					data-auto-height="true"
-					data-aspect-ratio="0.7729220222793488"
-					scrolling="no"
-					frameborder="0"
-				></iframe>
-			</div>
+			<a class="name" href="index.html">Nott-A-Thon: Turing</a>
+			<a class="rules" href="#">Official Rules</a>
+			<a class="contributor" href="contributor.html">Contributors</a>
+			<a class="faqs" href="faq.html">FAQs</a>
+			<a class="result" href="result.html" onclick="popOut()">Results</a>
+			<a href="#" onclick="openFB()" class="facebook"><div class="fb">f</div></a>
+			<a href="#" onclick="openInsta()" class="insta"><i class="fa fa-instagram"></i></a>
+		</div>
+		<div class="background"></div>
+	
 
+		<div class="sidebar">
+			<a class="active" href="/officialrules.html">Objectives</a>
+			<a href="/info_itinerary.html">Itinerary</a>
+			<a href="/info_rules.html">Competition Rules</a>
+			<a href="/info_prize.html">Prizes and Rewards</a>
+			<a href="/info_judging_criteria.html">Judging Criteria</a>
+			<a href="/info_foul.html">Foul Play</a>
+		  </div>
+		  
+		  <div class="content">
+			 <!--
+								<h2>Responsive Sidebar Example</h2>
+			<p>This example use media queries to transform the sidebar to a top navigation bar when the screen size is 700px or less.</p>
+			<p>We have also added a media query for screens that are 400px or less, which will vertically stack and center the navigation links.</p>
+			<h3>Resize the browser window to see the effect.</h3>
+			 -->
+
+		  <h2>
+			  Nott-A-Thon: Lovelace
+		  </h2>
+			<p>
+				The aim of competitive programming is to sharpen problem solving skills in programming. <br>
+				By limiting the competition time frame, participants learn to write efficient codes and algorithms to solve problems quickly. <br>
+				A vast majority of problems appearing in programming contests are mathematical or logical in nature.<br>
+This competitive programming competition is designed for programmers from different background with a mixture of different level of challenges.<br>
+
+			</p>
+		  </div>
+		
 			<div class="cprt">
-				<p>© 2021 IET UNM. All Rights Reserved.</p>
-			</div>
-		</nav>
+			<p>© 2021 IET UNM. All Rights Reserved.</p>
+		</div>
+			
+		
+	
+		
+
 		<script src="index.js"></script>
 	</body>
 </html>
