@@ -42,60 +42,56 @@
 			  font-family: Verdana, Geneva, Tahoma, sans-serif;
 			  background: linear-gradient(to right, rgb(12, 1, 20), rgb(31, 9, 78));
 			  font-size: larger;
+              
 			  
 			}
 			
-			.sidebar {
-			  margin: 0;
-			  padding: 0;
-			  width: 200px;
-			  background:rgb(12, 1, 20);
-			  position: fixed;
-			  height: 100%;
-			  overflow: auto;
-			}
-			
-			.sidebar a {
-			  display: block;
-			  color: rgb(255, 255, 255);
-			  padding: 16px;
-			  text-decoration: none;
-			}
-			 
-			.sidebar a.active {
-			  background-color: #0407aa;
-			  color: rgb(255, 255, 255);
-			}
-			
-			.sidebar a:hover:not(.active) {
-			  background-color: #555;
-			  color: white;
-			}
-			
-			div.content {
-			  margin-left: 200px;
-			  padding: 1px 16px;
-			  height: 1000px;
-			  color: cornsilk;
-			}
-			
-			@media screen and (max-width: 700px) {
-			  .sidebar {
-				width: 100%;
-				height: auto;
-				position: relative;
-			  }
-			  .sidebar a {float: left;}
-			  div.content {margin-left: 0;}
-			}
-			
-			@media screen and (max-width: 400px) {
-			  .sidebar a {
-				text-align: center;
-				float: none;
-			  }
-			}
-			</style>
+			#mySidenav a {
+            position: absolute ;
+            left: -80px;
+            transition: 0.3s;
+            padding: 15px;
+            width: 100px;
+            text-decoration: none;
+            font-size: 20px;
+            
+            border-radius: 0 5px 5px 0;
+            }
+
+            #mySidenav a:hover {
+            left: 0;
+            }
+
+            #objectives {
+            top: 100px;
+            background-color: #3505b8;
+            }
+
+            #itinerary {
+            top: 160px;
+            background-color: #ffffff;
+            }
+
+            #competitionrules {
+            top: 220px;
+            background-color: #3505b8;
+            }
+
+            #prizerewards {
+            top: 280px;
+            background-color: #ffffff
+            }
+
+            #judgingcriteria {
+            top: 340px;
+            background-color: #3505b8;
+            }
+
+            #foulplay {
+            top: 400px;
+            background-color: #ffffff
+            }
+          </style>
 	</head>
 	<body>
 	
@@ -121,24 +117,17 @@
 		</div>
 		<div class="background"></div>
 	
-
-		<div class="sidebar">
-			<a class="active" href="/officialrules.html">Objectives</a>
-			<a href="info_itinerary.html">Itinerary</a>
-			<a href="info_rules.html">Competition Rules</a>
-			<a href="info_prize.html">Prizes and Rewards</a>
-			<a href="info_judging_criteria.html">Judging Criteria</a>
-			<a href="info_foul.html">Foul Play</a>
-		  </div>
-		  
-		  <div class="content">
-			 <!--
-								<h2>Responsive Sidebar Example</h2>
-			<p>This example use media queries to transform the sidebar to a top navigation bar when the screen size is 700px or less.</p>
-			<p>We have also added a media query for screens that are 400px or less, which will vertically stack and center the navigation links.</p>
-			<h3>Resize the browser window to see the effect.</h3>
-			 -->
-			 <h2>
+        <div id="mySidenav" class="sidenav">
+            <a href="officialrules.html" id="objectives" style="color:white;">Objectives</a>
+            <a href="info_itinerary.html" id="itinerary" style="color:rgb(0, 0, 0);">Itinerary</a>
+            <a href="info_rules.html" id="competitionrules" style="color:white;">Rules</a>
+            <a href="info_prize.html" id="prizerewards" style="color:rgb(0, 0, 0);">Prizes</a>
+            <a href="info_judging_criteria.html" id="judgingcriteria" style="color:white;">Judging</a>
+            <a href="info_foul.html" id="foulplay" style="color:rgb(0, 0, 0);">Foul Play</a>
+          </div>
+          
+          <div style="margin-bottom:80px; margin-left:80px; color:white;">
+            <h2>
 				Competitive Programming
 			</h2>
 			  <p>
@@ -155,9 +144,10 @@
 				<br>Nott-A-Thon:Lovelace is a competitive programming competition designed for programmers from different background with a mixture of different level of challenges.<br>
 
 			</p>
-		  </div>
+          </div>
 		
-			<div class="cprt">
+		
+		<div class="cprt">
 			<p>© 2021 IET UNM. All Rights Reserved.</p>
 		</div>
 			
