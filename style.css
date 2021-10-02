@@ -529,7 +529,7 @@
 	width: 60%;
 	/* background-color: rgba(0, 0, 0, 0.9); */
 	display: grid;
-	height: 120px;
+	height:fit-content;
 	grid-template-columns: repeat(7, 1fr);
 	align-items: center;
 	justify-content: space-around;
@@ -540,7 +540,7 @@
 	-webkit-box-shadow: 10px 20px 30px rgba(255, 255, 255, 0.2);
 	box-shadow: 10px 20px 30px rgba(255, 255, 255, 0.2);
 }
-.slot-container{
+/* .slot-container{
 	display: grid;
 	grid-template-rows:  1fr 2fr 1fr;
 }
@@ -570,12 +570,17 @@
 }
 .purple{
 	background-color: rgb(204, 0, 255);
-}
+} */
 
 
 @font-face{
 	font-family:'digital-clock-font';
 	src: url('digital-7.ttf');
+}
+
+@font-face {
+	font-family: "subway-ticker";
+	src: url('SUBWT___.ttf');
 }
 
 .time > div >div> p {
@@ -592,6 +597,24 @@
 		0 0 160px #03bcf4;	
 	outline:none;
 	text-align: center;
+	border-radius: 50%;
+	width: 10vw;
+    height: 10vw;
+	display: grid;
+	align-items: center;
+	justify-content: center;
+	background-image: radial-gradient(rgb(0,255,255), rgb(106,90,205),rgb(0,255,255));
+}
+
+.time > div >div> span {
+	margin-top: 10%;
+	font-family: 'subway-ticker';
+	color: 	rgb(253, 254, 255);
+	text-shadow: 0 0 10px rgb(138,43,226),
+		0 0 20px rgb(138,43,226),
+		0 0 40px rgb(138,43,226),
+		0 0 80px rgb(138,43,226),
+		0 0 160px rgb(138,43,226);	
 }
 
 
