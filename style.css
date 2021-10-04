@@ -583,7 +583,7 @@
 	src: url('SUBWT___.ttf');
 }
 
-.time > div >div> p {
+.time > div > p {
 	font-size: 70px;
 	font-family:'digital-clock-font';
 	display: grid;
@@ -606,7 +606,7 @@
 	background-image: radial-gradient(rgb(0,255,255), rgb(106,90,205),rgb(0,255,255)); */
 }
 
-.time > div >div> span {
+.time > div > span {
 	margin-top: 10%;
 	font-family: 'subway-ticker';
 	color: 	rgb(253, 254, 255);
