@@ -1157,7 +1157,7 @@ h5 {
 }
 .iet > .profile {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+	grid-template-columns: repeat(5, minmax(260px, 1fr));
 	max-width: 100%;
 }
 .iet > div > .boss {
@@ -1182,6 +1182,8 @@ h5 {
 }
 .boss > div {
 	position: relative;
+	display: grid;
+	align-items: center;
 }
 
 .boss > div > .circle {
