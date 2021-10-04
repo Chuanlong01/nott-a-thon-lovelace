@@ -597,13 +597,13 @@
 		0 0 160px #03bcf4;	
 	outline:none;
 	text-align: center;
-	border-radius: 50%;
+	/* border-radius: 50%;
 	width: 10vw;
     height: 10vw;
 	display: grid;
 	align-items: center;
 	justify-content: center;
-	background-image: radial-gradient(rgb(0,255,255), rgb(106,90,205),rgb(0,255,255));
+	background-image: radial-gradient(rgb(0,255,255), rgb(106,90,205),rgb(0,255,255)); */
 }
 
 .time > div >div> span {
