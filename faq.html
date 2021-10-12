@@ -18,22 +18,13 @@
 		<link rel="apple-touch-icon" sizes="180x180" href="favicon_Black/apple-touch-icon.png" />
 		<link rel="icon" type="image/png" sizes="32x32" href="favicon_Black/favicon-32x32.png" />
 		<link rel="icon" type="image/png" sizes="16x16" href="favicon_Black/favicon-16x16.png" />
-		<link rel="manifest" href="favicon_Black/site.webmanifest"/>
+		<link rel="manifest" href="favicon_Black/site.webmanifest" />
 		<meta name="description" content="" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<script src="https://kit.fontawesome.com/a076d05399.js"></script>
-		<link
-			href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@600&display=swap"
-			rel="stylesheet"
-		/>
-		<link
-			href="https://fonts.googleapis.com/css2?family=PT+Sans:ital@1&family=Sansita+Swashed:wght@600&display=swap"
-			rel="stylesheet"
-		/>
-		<link
-			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-		/>
+		<link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@600&display=swap" rel="stylesheet" />
+		<link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital@1&family=Sansita+Swashed:wght@600&display=swap" rel="stylesheet" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 		<link rel="stylesheet" href="style.css" />
 	</head>
 	<body>
@@ -46,12 +37,19 @@
 				</button>
 				<div class="logo">
 					<a class="logo1" href="index.html"><img src="iet.png" alt="IET UNM" /></a>
-					<a class="logo2" href="index.html"
-						><img src="nott.jpg" alt="University of Nottingham Malaysia"
-					/></a>
+					<a class="logo2" href="index.html"><img src="nott.jpg" alt="University of Nottingham Malaysia" /></a>
 				</div>
 				<a class="name" href="index.html">Nott-A-Thon: Lovelace</a>
-				<a class="rules" href="officialrules.html">Official Rules</a>
+				<div class="rule">
+					<a class="rules">Official Rules</a>
+					<span class="arrow"></span>
+					<div class="dropdown">
+						<a class="objective">Objective</a>
+						<a id="rules">Rules</a>
+						<a class="judging">Judging</a>
+						<a class="pdf">Rulebook</a>
+					</div>
+				</div>
 				<a class="contributor" href="contributor.html">Contributors</a>
 				<a class="faqs" href="faq.html">FAQs</a>
 				<a class="result" href="result.html" onclick="popOut()">Results</a>
@@ -71,35 +69,25 @@
 				<div class="question">
 					<div class="ques 2" name="2">Am I allowed to use any programming language?</div>
 					<div class="answer 2">
-						<p>
-							It is locked to a few programming languages such as Python, Java, C, C++, and Kotlin.
-						</p>
+						<p>It is locked to a few programming languages such as Python, Java, C, C++, and Kotlin.</p>
 					</div>
 				</div>
 				<div class="question">
 					<div class="ques 3" name="3">I have never used Hackerrank before, can I still join?</div>
 					<div class="answer 3">
-						<p>
-							Definitely. We have prepared a section where you can practice and familiarise yourself
-							with the platform’s environment.
-						</p>
+						<p>Definitely. We have prepared a section where you can practice and familiarise yourself with the platform’s environment.</p>
 					</div>
 				</div>
 				<div class="question">
-					<div class="ques 4" name="4">
-						Must I be online throughout the 2 hours of the competition?
-					</div>
+					<div class="ques 4" name="4">Must I be online throughout the 2 hours of the competition?</div>
 					<div class="answer 4">
 						<p>
-							You don’t have to. You are given 2 hours to complete the challenges, however if you
-							manage to solve it earlier you may submit and leave.
+							You don’t have to. You are given 2 hours to complete the challenges, however if you manage to solve it earlier you may submit and leave.
 						</p>
 					</div>
 				</div>
 				<div class="question">
-					<div class="ques 5" name="5">
-						Can I sign up as a solo, but have a team of 3 during the competition?
-					</div>
+					<div class="ques 5" name="5">Can I sign up as a solo, but have a team of 3 during the competition?</div>
 					<div class="answer 5">
 						<p>No. You have to declare all the members of your team during registration.</p>
 					</div>
@@ -107,21 +95,15 @@
 				<div class="question">
 					<div class="ques 6">How will I get my prize?</div>
 					<div class="answer 6">
-						<p>
-							We will contact you and transfer the money to you (group leader) via bank transfer. So
-							make sure you get a reliable group leader
-						</p>
+						<p>We will contact you and transfer the money to you (group leader) via bank transfer. So make sure you get a reliable group leader</p>
 					</div>
 				</div>
 				<div class="question">
-					<div class="ques 7">
-						Will there be a pre-competition briefing session before the competition starts?
-					</div>
+					<div class="ques 7">Will there be a pre-competition briefing session before the competition starts?</div>
 					<div class="answer 7">
 						<p>
-							No. We will send out emails to you with a brief introduction of what you should
-							prepare before the competition starts, and please create a hackerank account before
-							hand
+							No. We will send out emails to you with a brief introduction of what you should prepare before the competition starts, and please create
+							a hackerank account before hand
 						</p>
 					</div>
 				</div>
@@ -140,16 +122,8 @@
 			</div>
 			<div class="stillHaveQuestion">
 				<div>Still Have Questions?</div>
-				<img
-					onclick="openFB()"
-					src="https://img.icons8.com/android/28/000000/facebook.png"
-					alt="Facebook"
-				/>
-				<img
-					onclick="openInsta()"
-					src="https://img.icons8.com/metro/30/000000/instagram-new.png"
-					alt="Instagram"
-				/>
+				<img onclick="openFB()" src="https://img.icons8.com/android/28/000000/facebook.png" alt="Facebook" />
+				<img onclick="openInsta()" src="https://img.icons8.com/metro/30/000000/instagram-new.png" alt="Instagram" />
 			</div>
 			<div class="cprt">
 				<p>© 2021 IET UNM. All Rights Reserved.</p>

@@ -1,5 +1,7 @@
 const menu = document.querySelector(".menu"),
 	menuA = document.querySelectorAll(".menu > a"),
+	rule = document.querySelector(".menu > .rule"),
+	rules = document.querySelector(".menu > .rule > .rules"),
 	insta = document.querySelector(".fa.fa-instagram"),
 	fb = document.querySelector(".fb"),
 	logo1 = document.querySelector(".logo1 img"),
@@ -14,6 +16,7 @@ function scrollFunction() {
 		  menu.classList.add("scrolldown"),
 		  insta.classList.add("scrolldown"),
 		  fb.classList.add("scrolldown"),
+		  (rules.style.color = "indigo"),
 		  menuA.forEach((o) => {
 				o.style.color = "indigo";
 		  }))
@@ -24,10 +27,48 @@ function scrollFunction() {
 		  menu.classList.remove("scrolldown"),
 		  insta.classList.remove("scrolldown"),
 		  fb.classList.remove("scrolldown"),
+		  (rules.style.color = "white"),
 		  menuA.forEach((o) => {
 				o.style.color = "white";
 		  }));
 }
+// Dropdown menu of rules
+const trigger = document.querySelector(".rule");
+const dropdownRules = document.querySelector(".dropdown");
+const arrow = document.querySelector(".arrow");
+
+function handleEnter() {
+	console.log(this);
+	// dropdownRules.style.display = "block";
+	// dropdownRules.style.opacity = "1";
+	this.classList.add("trigger-enter");
+	setTimeout(() => this.classList.contains("trigger-enter") && this.classList.add("trigger-enter-active"), 150);
+
+	const triggerCoords = trigger.getBoundingClientRect();
+	const dropdownCoords = dropdownRules.getBoundingClientRect();
+	console.log(dropdownCoords, triggerCoords);
+
+	const coords = {
+		height: dropdownCoords.height,
+		width: dropdownCoords.width,
+		top: triggerCoords.bottom + 20, //20 is padding
+		left: -(dropdownCoords.width / 2 - triggerCoords.width / 2),
+	};
+	console.log(coords);
+	arrow.style.setProperty("transform", `translate(${triggerCoords.left + triggerCoords.width / 2 - 10}px, ${coords.top - 20}px) rotate(45deg)`);
+	dropdownRules.style.setProperty("transform", `translate(${coords.left}px, ${coords.top}px)`);
+	console.log("enter");
+}
+
+function handleLeave() {
+	this.classList.remove("trigger-enter", "trigger-enter-active");
+
+	console.log("leave");
+}
+
+trigger.addEventListener("mouseenter", handleEnter);
+trigger.addEventListener("mouseleave", handleLeave);
+
 function openFB() {
 	window.open("https://www.facebook.com/IETUNMC");
 }
@@ -41,7 +82,6 @@ function googleform() {
 	window.open("https://forms.gle/6WYx6ekwvbgkn7bV9");
 	// alert("Registration is closed, sorry for inconvenience! Hope that we will see you next year!");
 	//window.location.href='/result.html';
-
 }
 function openPrintcious() {
 	window.open("https://www.printcious.com/my");
@@ -55,9 +95,7 @@ function openPrintcious() {
 	}),
 	window.innerWidth < 1100 &&
 		(window.onscroll = function () {
-			90 < document.body.scrollTop || 90 < document.documentElement.scrollTop
-				? menu.classList.add("toggle")
-				: menu.classList.remove("toggle");
+			90 < document.body.scrollTop || 90 < document.documentElement.scrollTop ? menu.classList.add("toggle") : menu.classList.remove("toggle");
 		});
 const dropdown = document.querySelectorAll(".ques"),
 	ans = document.querySelectorAll(".answer");
@@ -82,6 +120,7 @@ function toggleNav() {
 			  menuA.forEach((o) => {
 					o.style.display = "block";
 			  }),
+			  (rule.style.display = "grid"),
 			  (stopScrollBody.style.overflow = "hidden"),
 			  stopScrollHTML.style.overflow)
 			: 1 == o &&
@@ -89,10 +128,19 @@ function toggleNav() {
 			  menuA.forEach((o) => {
 					o.style.display = "none";
 			  }),
+			  (rule.style.display = "none"),
+			  rule.classList.remove("trigger-enter"),
 			  (stopScrollBody.style.overflow = "scroll"),
 			  stopScrollHTML.style.overflow);
 }
 navButton.addEventListener("click", toggleNav);
+
+// Dropdown for rules in mobile side
+function enterDropDown() {
+	rule.classList.toggle("trigger-enter");
+
+}
+rules.addEventListener("click", enterDropDown);
 
 const intViewportHeight = window.innerHeight - 191;
 const rulebook = document.querySelector("iframe");

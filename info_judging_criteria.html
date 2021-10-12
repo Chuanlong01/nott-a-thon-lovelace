@@ -22,83 +22,71 @@
 		<meta name="description" content="" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<script src="https://kit.fontawesome.com/a076d05399.js"></script>
-		<link
-			href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@600&display=swap"
-			rel="stylesheet"
-		/>
-		<link
-			href="https://fonts.googleapis.com/css2?family=PT+Sans:ital@1&family=Sansita+Swashed:wght@600&display=swap"
-			rel="stylesheet"
-		/>
-		<link
-			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-		/>
+		<link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@600&display=swap" rel="stylesheet" />
+		<link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital@1&family=Sansita+Swashed:wght@600&display=swap" rel="stylesheet" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 		<link rel="stylesheet" href="style.css" />
 
 		<style>
 			body {
-			  margin: 0;
-			  font-family: Verdana, Geneva, Tahoma, sans-serif;
-			  background: linear-gradient(to right, rgb(12, 1, 20), rgb(31, 9, 78));
-			  font-size: larger;
-              
-			  
+				margin: 0;
+				font-family: Verdana, Geneva, Tahoma, sans-serif;
+				background: linear-gradient(to right, rgb(12, 1, 20), rgb(31, 9, 78));
+				font-size: larger;
 			}
-			
+
 			#mySidenav a {
-            position: absolute ;
-            left: -80px;
-            transition: 0.3s;
-            padding: 15px;
-            width: 100px;
-            text-decoration: none;
-            font-size: 20px;
-            
-            border-radius: 0 5px 5px 0;
-            }
+				position: absolute;
+				left: -80px;
+				transition: 0.3s;
+				padding: 15px;
+				width: 100px;
+				text-decoration: none;
+				font-size: 20px;
 
-            #mySidenav a:hover {
-            left: 0;
-            }
+				border-radius: 0 5px 5px 0;
+			}
+
+			#mySidenav a:hover {
+				left: 0;
+			}
 			#about {
-            top: 100px;
-            background-color: #fdfdfd;
-            }
+				top: 100px;
+				background-color: #fdfdfd;
+			}
 
-            #objectives {
-            top: 160px;
-            background-color: #3505b8;
-            }
+			#objectives {
+				top: 160px;
+				background-color: #3505b8;
+			}
 
-            #itinerary {
-            top: 220px;
-            background-color: #ffffff;
-            }
+			#itinerary {
+				top: 220px;
+				background-color: #ffffff;
+			}
 
-            #competitionrules {
-            top: 280px;
-            background-color: #3505b8;
-            }
+			#competitionrules {
+				top: 280px;
+				background-color: #3505b8;
+			}
 
-            #prizerewards {
-            top: 340px;
-            background-color: #ffffff
-            }
+			#prizerewards {
+				top: 340px;
+				background-color: #ffffff;
+			}
 
-            #judgingcriteria {
-            top: 400px;
-            background-color: #3505b8;
-            }
+			#judgingcriteria {
+				top: 400px;
+				background-color: #3505b8;
+			}
 
-            #foulplay {
-            top: 460px;
-            background-color: #ffffff
-            }
-          </style>
+			#foulplay {
+				top: 460px;
+				background-color: #ffffff;
+			}
+		</style>
 	</head>
 	<body>
-	
 		<div class="menu">
 			<button aria-expanded="false" aria-controls="menu-list">
 				<div id="bar1"></div>
@@ -107,12 +95,19 @@
 			</button>
 			<div class="logo">
 				<a class="logo1" href="index.html"><img src="iet.png" alt="IET UNM" /></a>
-				<a class="logo2" href="index.html"
-					><img src="nott.jpg" alt="University of Nottingham Malaysia"
-				/></a>
+				<a class="logo2" href="index.html"><img src="nott.jpg" alt="University of Nottingham Malaysia" /></a>
 			</div>
-			<a class="name" href="index.html">Nott-A-Thon: Lovelace</a>
-			<a class="rules" href="#">Official Rules</a>
+			<a class="rules">Official Rules</a>
+			<div class="rule">
+				<a class="rules" href="officialrules.html">Official Rules</a>
+				<span class="arrow"></span>
+				<div class="dropdown">
+					<a class="objective">Objective</a>
+					<a id="rules">Rules</a>
+					<a class="judging">Judging</a>
+					<a class="pdf">Rulebook</a>
+				</div>
+			</div>
 			<a class="contributor" href="contributor.html">Contributors</a>
 			<a class="faqs" href="faq.html">FAQs</a>
 			<a class="result" href="result.html" onclick="popOut()">Results</a>
@@ -120,40 +115,26 @@
 			<a href="#" onclick="openInsta()" class="insta"><i class="fa fa-instagram"></i></a>
 		</div>
 		<div class="background"></div>
-	
-        <div id="mySidenav" class="sidenav">
-			<a href="info_about.html" id="about" style="color:rgb(0, 0, 0);">About</a>
-            <a href="officialrules.html" id="objectives" style="color:white;">Objectives</a>
-            <a href="info_itinerary.html" id="itinerary" style="color:rgb(0, 0, 0);">Itinerary</a>
-            <a href="info_rules.html" id="competitionrules" style="color:white;">Rules</a>
-            <a href="info_prize.html" id="prizerewards" style="color:rgb(0, 0, 0);">Prizes</a>
-            <a href="info_judging_criteria.html" id="judgingcriteria" style="color:white;">Judging</a>
-            <a href="info_foul.html" id="foulplay" style="color:rgb(0, 0, 0);">Foul Play</a>
-          </div>
-          
-          <div style="margin-bottom:80px; margin-left:80px; color:white;">
-			<h1>
-				About <br><br>
-			</h1>
-            <h2>
-				Judging Criteria
-			</h2>
-			  <p>
-				  TBA
-  
-			  </p>
 
+		<div id="mySidenav" class="sidenav">
+			<a href="info_about.html" id="about" style="color: rgb(0, 0, 0)">About</a>
+			<a href="officialrules.html" id="objectives" style="color: white">Objectives</a>
+			<a href="info_itinerary.html" id="itinerary" style="color: rgb(0, 0, 0)">Itinerary</a>
+			<a href="info_rules.html" id="competitionrules" style="color: white">Rules</a>
+			<a href="info_prize.html" id="prizerewards" style="color: rgb(0, 0, 0)">Prizes</a>
+			<a href="info_judging_criteria.html" id="judgingcriteria" style="color: white">Judging</a>
+			<a href="info_foul.html" id="foulplay" style="color: rgb(0, 0, 0)">Foul Play</a>
+		</div>
 
-          </div>
-		
-		
+		<div style="margin-bottom: 80px; margin-left: 80px; color: white">
+			<h1>About <br /><br /></h1>
+			<h2>Judging Criteria</h2>
+			<p>TBA</p>
+		</div>
+
 		<div class="cprt">
 			<p>© 2021 IET UNM. All Rights Reserved.</p>
 		</div>
-			
-		
-	
-		
 
 		<script src="index.js"></script>
 	</body>
