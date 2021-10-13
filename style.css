@@ -268,7 +268,7 @@
 	/* .rule{
 		height: 200px;
 	} */
-	.rules{
+	.rules {
 		align-items: flex-start;
 	}
 	.arrow,
@@ -276,16 +276,22 @@
 		display: none;
 	}
 	.trigger-enter .dropdown {
-		/* display: none; */
+		display: none;
+	}
+	.trigger-dropdown .dropdown {
+		display: grid;
 		opacity: 1;
 		position: relative;
 		background-color: initial;
 		transform: none;
 		left: 30%;
-
 	}
 	.trigger-enter .arrow {
 		display: none;
+	}
+	.menu > a:hover::after,
+	.rules:hover::after {
+		width: 0;
 	}
 	.menu > .facebook {
 		display: none;

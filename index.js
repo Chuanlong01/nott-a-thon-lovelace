@@ -65,9 +65,10 @@ function handleLeave() {
 
 	console.log("leave");
 }
-
-trigger.addEventListener("mouseenter", handleEnter);
-trigger.addEventListener("mouseleave", handleLeave);
+if (window.innerWidth >= 1150) {
+	trigger.addEventListener("mouseenter", handleEnter);
+	trigger.addEventListener("mouseleave", handleLeave);
+}
 
 function openFB() {
 	window.open("https://www.facebook.com/IETUNMC");
@@ -129,7 +130,7 @@ function toggleNav() {
 					o.style.display = "none";
 			  }),
 			  (rule.style.display = "none"),
-			  rule.classList.remove("trigger-enter"),
+			  rule.classList.remove("trigger-dropdown"),
 			  (stopScrollBody.style.overflow = "scroll"),
 			  stopScrollHTML.style.overflow);
 }
@@ -137,8 +138,7 @@ navButton.addEventListener("click", toggleNav);
 
 // Dropdown for rules in mobile side
 function enterDropDown() {
-	rule.classList.toggle("trigger-enter");
-
+	rule.classList.toggle("trigger-dropdown");
 }
 rules.addEventListener("click", enterDropDown);
 
