@@ -428,7 +428,7 @@
 	border-top-right-radius: 20px;
 	box-shadow: inset 1px 1px 2px rgba(104, 9, 141, 0.3), inset 3px 15px 45px rgba(59, 107, 197, 0.2), inset -1px -1px 2px rgba(205, 100, 214, 0.425),
 		inset -3px -15px 45px rgba(113, 28, 192, 0.747), 1px -1px 4px 1px #d194dd, 1px -1px 12px 3px #dbb7e6, 1px -1px 30px 4px #ffffff;
-	transition: 0.8s ease-in;
+	transition: 0.2s ease-in;
 }
 
 #googleform:hover span {
@@ -871,7 +871,7 @@ h5 {
 	border-top-right-radius: 2px;
 	box-shadow: inset 1px 1px 2px rgba(104, 9, 141, 0.3), inset 3px 15px 45px rgba(59, 107, 197, 0.2), inset -1px -1px 2px rgba(205, 100, 214, 0.425),
 		inset -3px -15px 45px rgba(113, 28, 192, 0.747), 1px -1px 4px 1px #d194dd, 1px -1px 12px 3px #dbb7e6, 1px -1px 30px 4px #ffffff;
-	transition: 0.8s ease-in;
+	transition: 0.2s ease-in;
 }
 
 #mockcontest:hover span {
