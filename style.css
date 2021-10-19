@@ -616,7 +616,7 @@
 	/* border: 2px solid white; */
 	-moz-box-shadow: 10px 20px 30px rgba(255, 255, 255, 0.2);
 	-webkit-box-shadow: 10px 20px 30px rgba(255, 255, 255, 0.2);
-	box-shadow: 10px 20px 30px rgba(255, 255, 255, 0.2);
+	box-shadow: 10px 20px 100px rgba(255, 255, 255, 0.4);
 }
 /* .slot-container{
 	display: grid;
@@ -682,7 +682,7 @@
 .time > div > span {
 	margin-top: 10%;
 	font-family: "subway-ticker";
-	color: rgb(253, 254, 255);
+	color: #fff;
 	text-shadow: 0 0 10px rgb(138, 43, 226), 0 0 20px rgb(138, 43, 226), 0 0 40px rgb(138, 43, 226), 0 0 80px rgb(138, 43, 226),
 		0 0 160px rgb(138, 43, 226);
 }
@@ -784,7 +784,13 @@
 .container-detail {
 	background-color: rgba(0, 0, 0, 0.8);
 }
-h5 {
+.container-timeline{
+	background-image: linear-gradient(to right, rgb(12, 1, 20), rgb(31, 9, 78));
+}
+.container-sponsor{
+	background-image: linear-gradient(to left, rgb(12, 1, 20), rgb(31, 9, 78));
+}
+h5,h6 {
 	font-family: "Bahnschrift", Times, serif;
 	font-size: 48px;
 	font-weight: 500;
@@ -887,7 +893,7 @@ h5 {
 	right: 0;
 }
 
-.about {
+.about{
 	margin-top: 50px;
 	height: auto;
 	grid-column: 2/3;
@@ -907,12 +913,29 @@ h5 {
 	height: auto;
 	grid-column: 2/3;
 }
-.detail {
+.detail{
 	margin-top: 50px;
 	height: auto;
 	grid-column: 2/3;
 	font-family: serif;
 }
+.timeline{
+	margin-top: 50px;
+	height: auto;
+	grid-column: 2/3;
+	font-family: serif;
+}
+.sponsor{
+	margin-top: 50px;
+	height: auto;
+	grid-column: 2/3;
+}
+
+.sameline{
+	display: flex;
+	text-align: center;
+}
+
 .nottathon > .prize > #detailcontent {
 	display: grid;
 	grid-template-columns: repeat(3, 33.33%);
@@ -943,6 +966,105 @@ h5 {
 	line-height: 150%;
 	padding: 20px;
 }
+
+
+/* for timeline */
+.box{
+    margin:0 10%;
+    height: auto;    
+    padding: 10px 0 40px 60px
+}
+
+.box ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    transition: all 0.5s linear;
+    top:0
+}
+
+.box ul:before{
+    content: "";
+    display: block;
+    width: 0;
+    height: 100%;
+    border:1px dashed rgb(255, 255, 255);
+    position: absolute;
+    top:0;
+    left:30px
+}
+
+.box ul li{
+    margin: 10px 60px 50px;
+    position: relative;
+    padding: 10px 20px;
+    background:rgba(255, 255, 255, 0.3);
+    color:rgb(255, 255, 255);
+    border-radius: 10px;
+    line-height: 20px;
+    
+}
+
+.box ul li > span{
+    content: "";
+    display: block;
+    width: 0;
+    height: 100%;
+    border:1px solid rgb(255, 255, 255);
+    position: absolute;
+    top:0;
+    left:-30px
+}
+
+.box ul li > span:before,.box ul li > span:after{
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background:#183cb3;
+    border:2px solid rgb(255, 255, 255);
+    position: absolute;
+    left:-7.5px
+}
+
+.box ul li > span:before{top:-10px}
+.box ul li > span:after{top:95%}
+
+.box .title{
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 10px
+}
+
+.box .info:first-letter{text-transform: capitalize;line-height: 1.7}
+
+.box .name{
+    margin-top: 10px;
+    text-transform: capitalize;
+    font-style: italic;
+    text-align: right;
+    margin-right: 20px
+}
+
+.box .timeEvent span{
+    position: absolute;
+    left: -100px;
+    color:rgb(255, 255, 255);
+    font-size:80%;
+    font-weight: bold;
+}
+.box .timeEvent span:first-child{top:-16px}
+.box .timeEvent span:last-child{top:94%}
+
+/*until here for timeline*/
+
+
+
+
+
+
 @media screen and (max-width: 1000px) {
 	.nottathon {
 		grid-template-columns: 2fr 10fr 2fr;
@@ -1160,6 +1282,7 @@ h5 {
 	font-size: 60px;
 	font-family: Arial, Helvetica, sans-serif;
 	font-weight: 600;
+	
 }
 .sponsorship > h6 {
 	padding-top: 80px;
@@ -1168,7 +1291,7 @@ h5 {
 .sponsorship > img {
 	width: 350px;
 	height: 150px;
-	background-color: rgba(255, 255, 255, 0.9);
+	background-color: rgba(255, 255, 255, 0.8);
 }
 .sponsorship > img:hover {
 	transition: all 0.3s;
