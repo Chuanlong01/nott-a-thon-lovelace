@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-XR0TFDH597"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag() {
+				dataLayer.push(arguments);
+			}
+			gtag("js", new Date());
+
+			gtag("config", "G-XR0TFDH597");
+		</script>
+		<title>Official Rules</title>
+		<meta charset="utf-8" />
+		<meta name="icon" content="" />
+		<link rel="apple-touch-icon" sizes="180x180" href="favicon_Black/apple-touch-icon.png" />
+		<link rel="icon" type="image/png" sizes="32x32" href="favicon_Black/favicon-32x32.png" />
+		<link rel="icon" type="image/png" sizes="16x16" href="favicon_Black/favicon-16x16.png" />
+		<link rel="manifest" href="favicon_Black/site.webmanifest" />
+		<meta name="description" content="" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+		<link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@600&display=swap" rel="stylesheet" />
+		<link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital@1&family=Sansita+Swashed:wght@600&display=swap" rel="stylesheet" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+		<link rel="stylesheet" href="style.css" />
+
+		<style>
+			body {
+				margin: 0;
+				font-family: Verdana, Geneva, Tahoma, sans-serif;
+				background: linear-gradient(to right, rgb(12, 1, 20), rgb(31, 9, 78));
+				font-size: larger;
+			}
+
+			#mySidenav a {
+				position: absolute;
+				left: -80px;
+				transition: 0.3s;
+				padding: 15px;
+				width: 100px;
+				text-decoration: none;
+				font-size: 20px;
+
+				border-radius: 0 5px 5px 0;
+			}
+
+			#mySidenav a:hover {
+				left: 0;
+			}
+			#about {
+				top: 100px;
+				background-color: #fdfdfd;
+			}
+
+			#objectives {
+				top: 160px;
+				background-color: #3505b8;
+			}
+
+			#itinerary {
+				top: 220px;
+				background-color: #ffffff;
+			}
+
+			#competitionrules {
+				top: 280px;
+				background-color: #3505b8;
+			}
+
+			#prizerewards {
+				top: 340px;
+				background-color: #ffffff;
+			}
+
+			#judgingcriteria {
+				top: 400px;
+				background-color: #3505b8;
+			}
+
+			#foulplay {
+				top: 460px;
+				background-color: #ffffff;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="menu">
+			<button aria-expanded="false" aria-controls="menu-list">
+				<div id="bar1"></div>
+				<div id="bar2"></div>
+				<div id="bar3"></div>
+			</button>
+			<div class="logo">
+				<a class="logo1" href="index.html"><img src="iet.png" alt="IET UNM" /></a>
+				<a class="logo2" href="index.html"><img src="nott.jpg" alt="University of Nottingham Malaysia" /></a>
+			</div>
+			<a class="name" href="index.html">Nott-A-Thon: Lovelace</a>
+			<div class="rule">
+				<a class="rules">Official Rules</a>
+				<span class="arrow"></span>
+				<div class="dropdown">
+					<a class="objective">Objective</a>
+					<a id="rules">Rules</a>
+					<a class="judging">Judging</a>
+					<a class="pdf">Rulebook</a>
+				</div>
+			</div>
+			<a class="contributor" href="contributor.html">Contributors</a>
+			<a class="faqs" href="faq.html">FAQs</a>
+			<a class="result" href="result.html" onclick="popOut()">Results</a>
+			<a href="#" onclick="openFB()" class="facebook"><div class="fb">f</div></a>
+			<a href="#" onclick="openInsta()" class="insta"><i class="fa fa-instagram"></i></a>
+		</div>
+		<div class="background"></div>
+
+		<div id="mySidenav" class="sidenav">
+			<a href="info_about.html" id="about" style="color: rgb(0, 0, 0)">About</a>
+			<a href="officialrules.html" id="objectives" style="color: white">Objectives</a>
+			<a href="info_itinerary.html" id="itinerary" style="color: rgb(0, 0, 0)">Itinerary</a>
+			<a href="info_rules.html" id="competitionrules" style="color: white">Rules</a>
+			<a href="info_prize.html" id="prizerewards" style="color: rgb(0, 0, 0)">Prizes</a>
+			<a href="info_judging_criteria.html" id="judgingcriteria" style="color: white">Judging</a>
+			<a href="info_foul.html" id="foulplay" style="color: rgb(0, 0, 0)">Foul Play</a>
+		</div>
+
+		<div style="margin-bottom: 80px; margin-left: 80px; color: white">
+			<h1>About <br /><br /></h1>
+			<h2>Competitive Programming</h2>
+			<p>
+				<br />The aim of competitive programming is to sharpen problem solving skills in programming. <br />
+				By limiting the competition time frame, participants learn to write efficient codes and algorithms to solve problems quickly. <br />
+				A vast majority of problems appearing in programming contests are mathematical or logical in nature.<br /><br />
+			</p>
+
+			<h2>Nott-A-Thon: Lovelace</h2>
+			<p>
+				<br />Nott-A-Thon:Lovelace is a competitive programming competition designed for programmers from different background with a mixture of
+				different level of challenges.<br />
+			</p>
+		</div>
+
+		<div class="cprt">
+			<p>© 2021 IET UNM. All Rights Reserved.</p>
+		</div>
+
+		<script src="index.js"></script>
+	</body>
+</html>
