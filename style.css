@@ -164,7 +164,7 @@
 	transform: translateY(100px);
 	display: none;
 	opacity: 0;
-	background: #fff;
+	background: rgb(145, 21, 21);
 	border-radius: 4px;
 }
 .trigger-enter .dropdown {
@@ -829,15 +829,16 @@ h5 {
 	height: 100px;
 	width: 200px;
 	background: transparent;
-	margin: 30px;
+	margin: 50px;
 	text-align: center;
 	line-height: 30px;
-	border-color: rgb(252, 252, 252);
-	border-bottom-left-radius: 15px;
-	border-bottom-right-radius: 15px;
-	border-top-left-radius: 15px;
-	border-top-right-radius: 15px;
-	color: rgb(241, 241, 241);
+	border-color: rgb(174, 0, 255);
+	border-width: 5px;
+	border-bottom-left-radius: 30px;
+	border-bottom-right-radius: 30px;
+	border-top-left-radius: 30px;
+	border-top-right-radius: 30px;
+	color: rgb(174, 0, 255);
 	text-shadow: -1px -1px 0px rgba(255, 255, 255, 0.2), 1px 1px 2px rgba(0, 0, 0, 0.2);
 	font-family: "Bahnschrift", fantasy;
 	transition: 0.8s ease-out;
@@ -846,12 +847,12 @@ h5 {
 	padding-bottom: 10px;
 	padding-left: 13px;
 
-	font-size: 2vh;
+	font-size: 20px;
 	text-transform: uppercase;
 	-webkit-animation: mockglowing 1300ms infinite;
 	-moz-animation: mockglowing 1300ms infinite;
 	-o-animation: mockglowing 1300ms infinite;
-	animation: mockglowing 1300ms infinite;
+	animation: mockglowing 3000ms infinite;
 }
 
 #mockcontest span {
@@ -863,15 +864,15 @@ h5 {
 @-webkit-keyframes mockglowing {
 	0% {
 	  /*background-color: rgb(3, 48, 85);*/
-	  -webkit-box-shadow: 0 0 15px #bc81e4;
+	  -webkit-box-shadow: 0 0 50px #bc81e4;
 	}
 	50% {
-	  /*background-color: rgb(41, 2, 85);*/
-	  -webkit-box-shadow: 0 0 50px #900dfc;
+	  background-color: rgb(56, 56, 56);
+	  -webkit-box-shadow: 0 0 50px #8c00ff;
 	}
 	100% {
 	  /*background-color: rgb(67, 88, 10);*/
-	  -webkit-box-shadow: 0 0 15px #24035a;
+	  -webkit-box-shadow: 0 0 50px #24035a;
 	}
   }
 
@@ -1848,7 +1849,7 @@ iframe {
 	color: #eeeeee;
 	cursor: pointer;
 	display: inline-block;
-	font-family: Arial;
+	font-family: Arial
 	font-size: 20px;
 	padding: 8px 30px;
 	text-align: center;
@@ -1872,7 +1873,7 @@ iframe {
 	margin: 30px;
 	text-align: center;
 	line-height: 30px;
-	border-color: rgb(252, 252, 252);
+	border-color: rgb(182, 145, 224);
 	border-width: 3px;
 	border-bottom-left-radius: 30px;
 	border-bottom-right-radius: 30px;
@@ -1918,7 +1919,7 @@ iframe {
 	}
 	50% {
 	  /*background-color: rgb(41, 2, 85);*/
-	  -webkit-box-shadow: 0 0 50px #21c7ed;
+	  -webkit-box-shadow: 0 0 80px #21c7ed;
 	}
 	100% {
 	  /*background-color: rgb(67, 88, 10);*/
