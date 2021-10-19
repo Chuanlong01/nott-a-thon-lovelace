@@ -392,7 +392,7 @@
 	border-top-right-radius: 30px;
 	color: rgb(241, 241, 241);
 	text-shadow: -1px -1px 0px rgba(255, 255, 255, 0.2), 1px 1px 2px rgba(0, 0, 0, 0.2);
-	font-family: "Tahoma", fantasy;
+	font-family: "Bahnschrift", fantasy;
 	transition: 0.1s ease-out;
 	padding-top: 10px;
 	padding-right: 13px;
@@ -832,8 +832,8 @@ h5,h6 {
 
 	cursor: pointer;
 	
-	height: 15vh;
-	width: 20vw;
+	height: 100px;
+	width: 200px;
 	background: transparent;
 	margin: 30px;
 	text-align: center;
@@ -845,7 +845,7 @@ h5,h6 {
 	border-top-right-radius: 15px;
 	color: rgb(241, 241, 241);
 	text-shadow: -1px -1px 0px rgba(255, 255, 255, 0.2), 1px 1px 2px rgba(0, 0, 0, 0.2);
-	font-family: "Tahoma", fantasy;
+	font-family: "Bahnschrift", fantasy;
 	transition: 0.8s ease-out;
 	padding-top: 10px;
 	padding-right: 13px;
@@ -854,6 +854,10 @@ h5,h6 {
 
 	font-size: 2vh;
 	text-transform: uppercase;
+	-webkit-animation: mockglowing 1300ms infinite;
+	-moz-animation: mockglowing 1300ms infinite;
+	-o-animation: mockglowing 1300ms infinite;
+	animation: mockglowing 1300ms infinite;
 }
 
 #mockcontest span {
@@ -862,36 +866,20 @@ h5,h6 {
 	position: relative;
 	transition: 0.5s;
 }
-#mockcontest span:after {
-	content: "\00bb";
-	font-size: 22px;
-	position: absolute;
-	opacity: 0;
-	top: 0;
-	right: -20px;
-	transition: 0.5s;
-}
-#mockcontest:hover {
-	/*
-	filter: brightness(110%);
-	*/
-	border-bottom-left-radius: 2px;
-	border-bottom-right-radius: 2px;
-	border-top-left-radius: 2px;
-	border-top-right-radius: 2px;
-	box-shadow: inset 1px 1px 2px rgba(104, 9, 141, 0.3), inset 3px 15px 45px rgba(59, 107, 197, 0.2), inset -1px -1px 2px rgba(205, 100, 214, 0.425),
-		inset -3px -15px 45px rgba(113, 28, 192, 0.747), 1px -1px 4px 1px #d194dd, 1px -1px 12px 3px #dbb7e6, 1px -1px 30px 4px #ffffff;
-	transition: 0.2s ease-in;
-}
-
-#mockcontest:hover span {
-	padding-right: 25px;
-}
-
-#mockcontest:hover span:after {
-	opacity: 1;
-	right: 0;
-}
+@-webkit-keyframes mockglowing {
+	0% {
+	  /*background-color: rgb(3, 48, 85);*/
+	  -webkit-box-shadow: 0 0 15px #bc81e4;
+	}
+	50% {
+	  /*background-color: rgb(41, 2, 85);*/
+	  -webkit-box-shadow: 0 0 50px #900dfc;
+	}
+	100% {
+	  /*background-color: rgb(67, 88, 10);*/
+	  -webkit-box-shadow: 0 0 15px #24035a;
+	}
+  }
 
 .about{
 	margin-top: 50px;
@@ -1974,3 +1962,89 @@ iframe {
 	box-shadow: -5px 0 0 rgb(204, 0, 255), -5px 0 0 rgb(204, 0, 255);
 	transition-delay: 0s 0.5s 0.5s 0.5s;
 }
+
+
+.glow_button {
+	border: 1px transparent;
+	-webkit-border-radius: 40px;
+	border-radius: 40px;
+	color: #eeeeee;
+	cursor: pointer;
+	display: inline-block;
+	font-family: Arial;
+	font-size: 20px;
+	padding: 8px 30px;
+	text-align: center;
+	text-decoration: none;
+	margin-left: 20px;
+	-webkit-animation: glowing 1300ms infinite;
+	-moz-animation: glowing 1300ms infinite;
+	-o-animation: glowing 1300ms infinite;
+	animation: glowing 1300ms infinite;
+  }
+
+
+
+  #round_glow_button {
+
+
+
+	cursor: pointer;
+	min-height: 30px;
+	background: transparent;
+	margin: 30px;
+	text-align: center;
+	line-height: 30px;
+	border-color: rgb(252, 252, 252);
+	border-width: 3px;
+	border-bottom-left-radius: 30px;
+	border-bottom-right-radius: 30px;
+	border-top-left-radius: 30px;
+	border-top-right-radius: 30px;
+	color: rgb(241, 241, 241);
+	text-shadow: -1px -1px 0px rgba(255, 255, 255, 0.2), 1px 1px 2px rgba(0, 0, 0, 0.2);
+	font-family: "Bahnschrift", fantasy;
+	transition: 0.1s ease-out;
+	padding-top: 10px;
+	padding-right: 13px;
+	padding-bottom: 10px;
+	padding-left: 13px;
+	/*
+	box-shadow: inset 1px 1px 2px rgba(240, 242, 243, 0.795), inset 3px 15px 45px rgba(255, 255, 255, 0.1), inset -1px -1px 2px rgba(0, 0, 0, 0.5),
+		inset -3px -15px 45px rgba(0, 0, 0, 0.2), 1px 5px 30px -4px rgba(0, 0, 0, 1);
+		*/
+	text-transform: uppercase;
+	-webkit-animation: glowing 1300ms infinite;
+	-moz-animation: glowing 1300ms infinite;
+	-o-animation: glowing 1300ms infinite;
+	animation: glowing 1300ms infinite;
+}
+#round_glow_button span {
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	transition: 0.2s;
+}
+#round_glow_button span:after {
+	content: "\00bb";
+	font-size: 22px;
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	right: -20px;
+	transition: 0s;
+}
+@-webkit-keyframes glowing {
+	0% {
+	  /*background-color: rgb(3, 48, 85);*/
+	  -webkit-box-shadow: 0 0 15px #0091b2;
+	}
+	50% {
+	  /*background-color: rgb(41, 2, 85);*/
+	  -webkit-box-shadow: 0 0 50px #21c7ed;
+	}
+	100% {
+	  /*background-color: rgb(67, 88, 10);*/
+	  -webkit-box-shadow: 0 0 15px #51cdec;
+	}
+  }
