@@ -784,13 +784,14 @@
 .container-detail {
 	background-color: rgba(0, 0, 0, 0.8);
 }
-.container-timeline{
+.container-timeline {
 	background-image: linear-gradient(to right, rgb(12, 1, 20), rgb(31, 9, 78));
 }
-.container-sponsor{
+.container-sponsor {
 	background-image: linear-gradient(to left, rgb(12, 1, 20), rgb(31, 9, 78));
 }
-h5,h6 {
+h5,
+h6 {
 	font-family: "Bahnschrift", Times, serif;
 	font-size: 48px;
 	font-weight: 500;
@@ -831,7 +832,7 @@ h5,h6 {
 	*/
 
 	cursor: pointer;
-	
+
 	height: 100px;
 	width: 200px;
 	background: transparent;
@@ -868,24 +869,73 @@ h5,h6 {
 }
 @-webkit-keyframes mockglowing {
 	0% {
-	  /*background-color: rgb(3, 48, 85);*/
-	  -webkit-box-shadow: 0 0 15px #bc81e4;
+		/*background-color: rgb(3, 48, 85);*/
+		-webkit-box-shadow: 0 0 15px #bc81e4;
 	}
 	50% {
-	  /*background-color: rgb(41, 2, 85);*/
-	  -webkit-box-shadow: 0 0 50px #900dfc;
+		/*background-color: rgb(41, 2, 85);*/
+		-webkit-box-shadow: 0 0 50px #900dfc;
 	}
 	100% {
-	  /*background-color: rgb(67, 88, 10);*/
-	  -webkit-box-shadow: 0 0 15px #24035a;
+		/*background-color: rgb(67, 88, 10);*/
+		-webkit-box-shadow: 0 0 15px #24035a;
 	}
-  }
+}
 
-.about{
+.about {
 	margin-top: 50px;
 	height: auto;
 	grid-column: 2/3;
+	padding-bottom: 50px;
 }
+.datatable {
+	width: 90%;
+	margin-left: 5%;
+	border-radius: 10px;
+	background-color: rgba(28, 4, 66, 0.8);
+	height: 200px;
+	grid-column: 2/3;
+	display: grid;
+	grid-template-columns: repeat(4, 25%);
+	/* grid-gap: 10px; */
+	align-items: center;
+	justify-items: center;
+}
+.data {
+	/* background-color: white; */
+	height: 80%;
+	width: 100%;
+	display: grid;
+	grid-template-rows: 30% 40% 15%;
+	justify-content: center;
+}
+.data > .icon {
+	display: grid;
+	align-items: flex-end;
+	justify-content: center;
+}
+.number-wrapper {
+	color: white;
+	filter: brightness(120%);
+	text-align: center;
+	font-family: sans-serif;
+	font-size: 45px;
+	font-weight: 500;
+	display: grid;
+	align-items: center;
+	justify-content: center;
+}
+.title-wrapper {
+	color: rgba(255, 255, 255, 0.4);
+	/* color: #cd4bee; */
+	text-align: center;
+	font-family: sans-serif;
+	font-size: 16px;
+	display: grid;
+	align-items: center;
+	justify-content: center;
+}
+
 .introduction {
 	margin-top: 50px;
 	height: auto;
@@ -901,25 +951,25 @@ h5,h6 {
 	height: auto;
 	grid-column: 2/3;
 }
-.detail{
+.detail {
 	margin-top: 50px;
 	height: auto;
 	grid-column: 2/3;
 	font-family: serif;
 }
-.timeline{
+.timeline {
 	margin-top: 50px;
 	height: auto;
 	grid-column: 2/3;
 	font-family: serif;
 }
-.sponsor{
+.sponsor {
 	margin-top: 50px;
 	height: auto;
 	grid-column: 2/3;
 }
 
-.sameline{
+.sameline {
 	display: flex;
 	text-align: center;
 }
@@ -955,103 +1005,108 @@ h5,h6 {
 	padding: 20px;
 }
 
-
 /* for timeline */
-.box{
-    margin:0 10%;
-    height: auto;    
-    padding: 10px 0 40px 60px
+.box {
+	margin: 0 10%;
+	height: auto;
+	padding: 10px 0 40px 60px;
 }
 
-.box ul{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    position: relative;
-    transition: all 0.5s linear;
-    top:0
+.box ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	transition: all 0.5s linear;
+	top: 0;
 }
 
-.box ul:before{
-    content: "";
-    display: block;
-    width: 0;
-    height: 100%;
-    border:1px dashed rgb(255, 255, 255);
-    position: absolute;
-    top:0;
-    left:30px
+.box ul:before {
+	content: "";
+	display: block;
+	width: 0;
+	height: 100%;
+	border: 1px dashed rgb(255, 255, 255);
+	position: absolute;
+	top: 0;
+	left: 30px;
 }
 
-.box ul li{
-    margin: 10px 60px 50px;
-    position: relative;
-    padding: 10px 20px;
-    background:rgba(255, 255, 255, 0.3);
-    color:rgb(255, 255, 255);
-    border-radius: 10px;
-    line-height: 20px;
-    
+.box ul li {
+	margin: 10px 60px 50px;
+	position: relative;
+	padding: 10px 20px;
+	background: rgba(255, 255, 255, 0.3);
+	color: rgb(255, 255, 255);
+	border-radius: 10px;
+	line-height: 20px;
 }
 
-.box ul li > span{
-    content: "";
-    display: block;
-    width: 0;
-    height: 100%;
-    border:1px solid rgb(255, 255, 255);
-    position: absolute;
-    top:0;
-    left:-30px
+.box ul li > span {
+	content: "";
+	display: block;
+	width: 0;
+	height: 100%;
+	border: 1px solid rgb(255, 255, 255);
+	position: absolute;
+	top: 0;
+	left: -30px;
 }
 
-.box ul li > span:before,.box ul li > span:after{
-    content: "";
-    display: block;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background:#183cb3;
-    border:2px solid rgb(255, 255, 255);
-    position: absolute;
-    left:-7.5px
+.box ul li > span:before,
+.box ul li > span:after {
+	content: "";
+	display: block;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background: #183cb3;
+	border: 2px solid rgb(255, 255, 255);
+	position: absolute;
+	left: -7.5px;
 }
 
-.box ul li > span:before{top:-10px}
-.box ul li > span:after{top:95%}
-
-.box .title{
-    text-transform: uppercase;
-    font-weight: 700;
-    margin-bottom: 10px
+.box ul li > span:before {
+	top: -10px;
+}
+.box ul li > span:after {
+	top: 95%;
 }
 
-.box .info:first-letter{text-transform: capitalize;line-height: 1.7}
-
-.box .name{
-    margin-top: 10px;
-    text-transform: capitalize;
-    font-style: italic;
-    text-align: right;
-    margin-right: 20px
+.box .title {
+	text-transform: uppercase;
+	font-weight: 700;
+	margin-bottom: 10px;
 }
 
-.box .timeEvent span{
-    position: absolute;
-    left: -100px;
-    color:rgb(255, 255, 255);
-    font-size:80%;
-    font-weight: bold;
+.box .info:first-letter {
+	text-transform: capitalize;
+	line-height: 1.7;
 }
-.box .timeEvent span:first-child{top:-16px}
-.box .timeEvent span:last-child{top:94%}
+
+.box .name {
+	margin-top: 10px;
+	text-transform: capitalize;
+	font-style: italic;
+	text-align: right;
+	margin-right: 20px;
+}
+
+.box .timeEvent span {
+	position: absolute;
+	left: -100px;
+	color: rgb(255, 255, 255);
+	font-size: 80%;
+	font-weight: bold;
+}
+.box .timeEvent span:first-child {
+	top: -16px;
+}
+.box .timeEvent span:last-child {
+	top: 94%;
+}
 
 /*until here for timeline*/
-
-
-
-
-
 
 @media screen and (max-width: 1000px) {
 	.nottathon {
@@ -1270,7 +1325,6 @@ h5,h6 {
 	font-size: 60px;
 	font-family: Arial, Helvetica, sans-serif;
 	font-weight: 600;
-	
 }
 .sponsorship > h6 {
 	padding-top: 80px;
@@ -1963,7 +2017,6 @@ iframe {
 	transition-delay: 0s 0.5s 0.5s 0.5s;
 }
 
-
 .glow_button {
 	border: 1px transparent;
 	-webkit-border-radius: 40px;
@@ -1981,14 +2034,9 @@ iframe {
 	-moz-animation: glowing 1300ms infinite;
 	-o-animation: glowing 1300ms infinite;
 	animation: glowing 1300ms infinite;
-  }
+}
 
-
-
-  #round_glow_button {
-
-
-
+#round_glow_button {
 	cursor: pointer;
 	min-height: 30px;
 	background: transparent;
@@ -2036,15 +2084,15 @@ iframe {
 }
 @-webkit-keyframes glowing {
 	0% {
-	  /*background-color: rgb(3, 48, 85);*/
-	  -webkit-box-shadow: 0 0 15px #0091b2;
+		/*background-color: rgb(3, 48, 85);*/
+		-webkit-box-shadow: 0 0 15px #0091b2;
 	}
 	50% {
-	  /*background-color: rgb(41, 2, 85);*/
-	  -webkit-box-shadow: 0 0 50px #21c7ed;
+		/*background-color: rgb(41, 2, 85);*/
+		-webkit-box-shadow: 0 0 50px #21c7ed;
 	}
 	100% {
-	  /*background-color: rgb(67, 88, 10);*/
-	  -webkit-box-shadow: 0 0 15px #51cdec;
+		/*background-color: rgb(67, 88, 10);*/
+		-webkit-box-shadow: 0 0 15px #51cdec;
 	}
-  }
+}
