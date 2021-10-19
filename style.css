@@ -336,22 +336,23 @@
 	z-index: inherit;
 }
 #line1 {
-	font-size: 60px;
+	font-size: 70px;
 	padding: 5px;
 	font-family: "Sansita Swashed", cursive;
 }
 #line2 {
-	font-size: 20px;
-	padding: 5px;
-	font-family: "Sansita Swashed", cursive;
+	font-size: 30px;
+	padding: 10px 5px;
+	padding-bottom: 50px;
+	font-family: "Bahnschrift", Times, serif;
 	margin-bottom: 20px;
 }
 #line3,
 #line4,
 #line5,
 #line6 {
-	font-size: 20px;
-	font-family: "PT Sans", sans-serif;
+	font-size: 22px;
+	font-family: "Bahnschrift", Times, serif;
 	padding: 5px;
 }
 
@@ -784,9 +785,9 @@
 	background-color: rgba(0, 0, 0, 0.8);
 }
 h5 {
-	font-family: serif;
+	font-family: "Bahnschrift", Times, serif;
 	font-size: 48px;
-	font-weight: 200;
+	font-weight: 500;
 	text-align: center;
 	padding: 30px;
 	color: rgba(255, 255, 255, 0.95);
