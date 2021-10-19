@@ -393,7 +393,7 @@
 	color: rgb(241, 241, 241);
 	text-shadow: -1px -1px 0px rgba(255, 255, 255, 0.2), 1px 1px 2px rgba(0, 0, 0, 0.2);
 	font-family: "Tahoma", fantasy;
-	transition: 0.8s ease-out;
+	transition: 0.1s ease-out;
 	padding-top: 10px;
 	padding-right: 13px;
 	padding-bottom: 10px;
@@ -408,7 +408,7 @@
 	cursor: pointer;
 	display: inline-block;
 	position: relative;
-	transition: 0.5s;
+	transition: 0.2s;
 }
 #googleform span:after {
 	content: "\00bb";
@@ -417,7 +417,7 @@
 	opacity: 0;
 	top: 0;
 	right: -20px;
-	transition: 0.5s;
+	transition: 0s;
 }
 #googleform:hover {
 	/* background-color: rgb(228, 85, 241);
@@ -429,7 +429,7 @@
 	border-top-right-radius: 20px;
 	box-shadow: inset 1px 1px 2px rgba(104, 9, 141, 0.3), inset 3px 15px 45px rgba(59, 107, 197, 0.2), inset -1px -1px 2px rgba(205, 100, 214, 0.425),
 		inset -3px -15px 45px rgba(113, 28, 192, 0.747), 1px -1px 4px 1px #d194dd, 1px -1px 12px 3px #dbb7e6, 1px -1px 30px 4px #ffffff;
-	transition: 0.8s ease-in;
+	transition: 0.2s ease-in;
 }
 
 #googleform:hover span {
@@ -825,7 +825,9 @@ h5 {
 	*/
 
 	cursor: pointer;
-	min-height: 30px;
+	
+	height: 15vh;
+	width: 20vw;
 	background: transparent;
 	margin: 30px;
 	text-align: center;
@@ -844,6 +846,7 @@ h5 {
 	padding-bottom: 10px;
 	padding-left: 13px;
 
+	font-size: 2vh;
 	text-transform: uppercase;
 }
 
@@ -872,7 +875,7 @@ h5 {
 	border-top-right-radius: 2px;
 	box-shadow: inset 1px 1px 2px rgba(104, 9, 141, 0.3), inset 3px 15px 45px rgba(59, 107, 197, 0.2), inset -1px -1px 2px rgba(205, 100, 214, 0.425),
 		inset -3px -15px 45px rgba(113, 28, 192, 0.747), 1px -1px 4px 1px #d194dd, 1px -1px 12px 3px #dbb7e6, 1px -1px 30px 4px #ffffff;
-	transition: 0.8s ease-in;
+	transition: 0.2s ease-in;
 }
 
 #mockcontest:hover span {
