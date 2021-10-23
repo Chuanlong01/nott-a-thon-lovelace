@@ -164,7 +164,8 @@
 	transform: translateY(100px);
 	display: none;
 	opacity: 0;
-	background: rgb(145, 21, 21);
+	background: rgb(61, 5, 107);
+	border-color: white;
 	border-radius: 4px;
 }
 .trigger-enter .dropdown {
@@ -189,7 +190,7 @@
 	opacity: 0;
 	left: 0;
 	top: -10px; /*half of the height*/
-	background: white;
+	background: rgb(61, 5, 107);
 }
 /* media query for header */
 @media screen and (max-width: 1300px) {
