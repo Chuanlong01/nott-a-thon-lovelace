@@ -179,7 +179,7 @@
 								</g>
 							</svg>
 						</div>
-						<div class="number-wrapper">5</div>
+						<div class="number-wrapper">0</div>
 						<div class="title-wrapper">Countries</div>
 					</div>
 					<div class="data questions">
@@ -227,7 +227,7 @@
 								</g>
 							</svg>
 						</div>
-						<div class="number-wrapper">7</div>
+						<div class="number-wrapper">0</div>
 						<div class="title-wrapper">Questions</div>
 					</div>
 					<div class="data uni">
@@ -258,7 +258,7 @@
 								</g>
 							</svg>
 						</div>
-						<div class="number-wrapper">14</div>
+						<div class="number-wrapper">0</div>
 						<div class="title-wrapper">University</div>
 					</div>
 					<div class="data participants">
@@ -289,7 +289,7 @@
 								</g>
 							</svg>
 						</div>
-						<div class="number-wrapper">111</div>
+						<div class="number-wrapper">0</div>
 						<div class="title-wrapper">Participants</div>
 					</div>
 				</div>
@@ -421,17 +421,37 @@
 				hour.innerHTML = hours < 10 ? "0" + hours : hours;
 				min.innerHTML = minutes < 10 ? "0" + minutes : minutes;
 				sec.innerHTML = seconds < 10 ? "0" + seconds : seconds;
+				if (isScroll == true) {
+					setInterval(updateData, 200, 0, 5);
+					setInterval(updateData, 100, 1, 7);
+					setInterval(updateData, 50, 2, 14);
+					setInterval(updateData, 25, 3, 111);
+				}
 			}
-			setInterval(getTime, 1000);
+			var number = document.querySelectorAll(".number-wrapper");
 
-			function animateValue(id) {
-				var obj = document.querySelector(id);
-				var current = obj.innerHTML;
-				setInterval(function () {
-					current++;
-				}, 1000);
+			var value = [0, 0, 0, 0];
+			var increment = 1;
+			var isScroll = false;
+
+			function updateData(index, ceiling) {
+				if (index == 3) {
+					increment = 3;
+				} else {
+					increment = 1;
+				}
+				if (value[index] < ceiling) {
+					value[index] += increment;
+				}
+				number[index].innerHTML = value[index];
 			}
-			animateValue(number-wrapper)
+
+			window.onscroll = function () {
+				if (1000 < document.body.scrollTop || 1000 < document.documentElement.scrollTop) {
+					isScroll = true;
+				}
+			};
+			setInterval(getTime, 1000);
 		</script>
 	</body>
 </html>

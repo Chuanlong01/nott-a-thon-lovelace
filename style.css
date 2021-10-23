@@ -870,17 +870,16 @@ h6 {
 }
 @-webkit-keyframes mockglowing {
 	0% {
-	  /*background-color: rgb(3, 48, 85);*/
-	  -webkit-box-shadow: 0 0 50px #bc81e4;
+		/*background-color: rgb(3, 48, 85);*/
+		-webkit-box-shadow: 0 0 50px #bc81e4;
 	}
 	50% {
-	  background-color: rgb(56, 56, 56);
-	  -webkit-box-shadow: 0 0 50px #8c00ff;
+		background-color: rgb(56, 56, 56);
+		-webkit-box-shadow: 0 0 50px #8c00ff;
 	}
 	100% {
-	  /*background-color: rgb(67, 88, 10);*/
-	  -webkit-box-shadow: 0 0 50px #24035a;
-
+		/*background-color: rgb(67, 88, 10);*/
+		-webkit-box-shadow: 0 0 50px #24035a;
 	}
 }
 
@@ -916,6 +915,7 @@ h6 {
 	align-items: flex-end;
 	justify-content: center;
 }
+
 .number-wrapper {
 	color: white;
 	filter: brightness(120%);
@@ -1125,6 +1125,12 @@ h6 {
 	.nottathon > .prize > #detailcontent > .third > h6 {
 		font-size: 19px;
 	}
+	.number-wrapper {
+		font-size: 35px;
+	}
+	.title-wrapper {
+		font-size: 15px;
+	}
 }
 @media screen and (max-width: 700px) {
 	.nottathon > .prize > #detailcontent {
@@ -1139,6 +1145,9 @@ h6 {
 	}
 	.nottathon > .prize > #detailcontent > .third {
 		grid-row: 3;
+	}
+	.datatable {
+		height: 175px;
 	}
 }
 
@@ -1160,6 +1169,23 @@ h6 {
 	.detail > p {
 		font-size: 20px;
 		padding: 20px;
+	}
+	.datatable {
+		height: 135px;
+		width: 95%;
+		margin-left: 2.5%;
+	}
+
+	.number-wrapper {
+		font-size: 25px;
+	}
+	.title-wrapper {
+		font-size: 11px;
+	}
+
+	.data > .icon > svg {
+		height: 30px;
+		width: 30px;
 	}
 }
 /* FAQs */
@@ -2026,7 +2052,7 @@ iframe {
 	color: #eeeeee;
 	cursor: pointer;
 	display: inline-block;
-	font-family: Arial
+	font-family: Arial;
 	font-size: 20px;
 	padding: 8px 30px;
 	text-align: center;
@@ -2090,9 +2116,8 @@ iframe {
 		-webkit-box-shadow: 0 0 15px #0091b2;
 	}
 	50% {
-	  /*background-color: rgb(41, 2, 85);*/
-	  -webkit-box-shadow: 0 0 80px #21c7ed;
-
+		/*background-color: rgb(41, 2, 85);*/
+		-webkit-box-shadow: 0 0 80px #21c7ed;
 	}
 	100% {
 		/*background-color: rgb(67, 88, 10);*/
