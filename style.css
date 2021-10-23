@@ -938,16 +938,31 @@ h6 {
 	align-items: center;
 	justify-content: center;
 }
-
+.nottathon.container-intro {
+	display: grid;
+	grid-template-columns: 1fr 4fr 0.5fr 5fr;
+	font-family: Arial, Helvetica, sans-serif;
+	text-align: justify;
+	background-color: rgba(0, 0, 0, 0.8);
+	padding-bottom: 100px;
+}
 .introduction {
 	margin-top: 50px;
 	height: auto;
 	grid-column: 2/3;
 	display: grid;
 	justify-items: center;
+	text-align: center;
 }
 .introduction > #detailcontent {
 	padding-bottom: 30px;
+}
+#hackerrank {
+	height: 100%;
+	width: 100%;
+	grid-column: 4/5;
+	filter: opacity(85%);
+	border-radius: 10px;
 }
 .prize {
 	margin-top: 50px;

@@ -7,6 +7,7 @@ const menu = document.querySelector(".menu"),
 	logo1 = document.querySelector(".logo1 img"),
 	logo2 = document.querySelector(".logo2 img"),
 	bar = document.querySelectorAll("button[aria-expanded]>div");
+var isScroll = false;
 function scrollFunction() {
 	90 < document.body.scrollTop || 90 < document.documentElement.scrollTop
 		? ((logo1.style.transform = "translateX(-200%)"),
@@ -31,6 +32,9 @@ function scrollFunction() {
 		  menuA.forEach((o) => {
 				o.style.color = "white";
 		  }));
+	if (1000 < document.body.scrollTop || 1000 < document.documentElement.scrollTop) {
+		isScroll = true;
+	}
 }
 // Dropdown menu of rules
 const trigger = document.querySelector(".rule");
