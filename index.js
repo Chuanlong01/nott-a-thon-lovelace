@@ -8,6 +8,7 @@ const menu = document.querySelector(".menu"),
 	logo2 = document.querySelector(".logo2 img"),
 	bar = document.querySelectorAll("button[aria-expanded]>div");
 var isScroll = false;
+const hackerrankPage = document.querySelector("#hackerrank");
 function scrollFunction() {
 	90 < document.body.scrollTop || 90 < document.documentElement.scrollTop
 		? ((logo1.style.transform = "translateX(-200%)"),
@@ -34,6 +35,9 @@ function scrollFunction() {
 		  }));
 	if (1000 < document.body.scrollTop || 1000 < document.documentElement.scrollTop) {
 		isScroll = true;
+	}
+	if (1500 < document.body.scrollTop || 1500 < document.documentElement.scrollTop) {
+		hackerrankPage.style.setProperty("transform", "translateX(0)");
 	}
 }
 // Dropdown menu of rules

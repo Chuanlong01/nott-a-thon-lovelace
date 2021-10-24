@@ -963,6 +963,8 @@ h6 {
 	grid-column: 4/5;
 	filter: opacity(85%);
 	border-radius: 10px;
+	transition: transform 1.5s;
+	transform: translateX(1000px);
 }
 .prize {
 	margin-top: 50px;
