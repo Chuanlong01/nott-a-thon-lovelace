@@ -33,11 +33,11 @@ function scrollFunction() {
 		  menuA.forEach((o) => {
 				o.style.color = "white";
 		  }));
-	if (1000 < document.body.scrollTop || 1000 < document.documentElement.scrollTop) {
+	if (900 < document.body.scrollTop || 900 < document.documentElement.scrollTop) {
 		isScroll = true;
 	}
-	if (1500 < document.body.scrollTop || 1500 < document.documentElement.scrollTop) {
-		hackerrankPage.style.setProperty("transform", "translateX(0)");
+	if (1300 < document.body.scrollTop || 1300 < document.documentElement.scrollTop) {
+		hackerrankPage.style.setProperty("opacity", "85%");
 	}
 }
 // Dropdown menu of rules
@@ -105,7 +105,9 @@ function openPrintcious() {
 	window.innerWidth < 1100 &&
 		(window.onscroll = function () {
 			90 < document.body.scrollTop || 90 < document.documentElement.scrollTop ? menu.classList.add("toggle") : menu.classList.remove("toggle");
+			isScroll = true;
 		});
+
 const dropdown = document.querySelectorAll(".ques"),
 	ans = document.querySelectorAll(".answer");
 function dropdownAns() {

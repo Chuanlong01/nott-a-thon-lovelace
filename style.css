@@ -961,10 +961,10 @@ h6 {
 	height: 100%;
 	width: 100%;
 	grid-column: 4/5;
-	filter: opacity(85%);
 	border-radius: 10px;
-	transition: transform 1.5s;
-	transform: translateX(1000px);
+	transition: opacity 1.5s;
+	/* display: none; */
+	opacity: 0;
 }
 .prize {
 	margin-top: 50px;
@@ -1127,6 +1127,19 @@ h6 {
 }
 
 /*until here for timeline*/
+@media screen and (max-width: 1400px) {
+	.nottathon.container-intro {
+		display: grid;
+		grid-template-columns: 1fr 6fr 1fr;
+		grid-template-rows: auto auto;
+	}
+
+	#hackerrank {
+		grid-column: 2/3;
+		grid-row-start: 2/3;
+		transform: none;
+	}
+}
 
 @media screen and (max-width: 1000px) {
 	.nottathon {
@@ -1166,6 +1179,13 @@ h6 {
 	}
 	.datatable {
 		height: 175px;
+	}
+	.nottathon.container-intro {
+		grid-template-rows: auto;
+		padding-bottom: 50px;
+	}
+	#hackerrank {
+		display: none;
 	}
 }
 
