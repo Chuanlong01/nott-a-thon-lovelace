@@ -1,3 +1,13 @@
+<!--    
+	================================================================
+	================================================================
+	Tutorial for paargraph formating
+	https://html.com/paragraphs/#Indenting_a_Paragraph
+	================================================================
+	================================================================
+-->
+
+
 <!DOCTYPE html>
 <html>
 	<head>
@@ -35,55 +45,7 @@
 				font-size: larger;
 			}
 
-			#mySidenav a {
-				position: absolute;
-				left: -80px;
-				transition: 0.3s;
-				padding: 15px;
-				width: 100px;
-				text-decoration: none;
-				font-size: 20px;
-
-				border-radius: 0 5px 5px 0;
-			}
-
-			#mySidenav a:hover {
-				left: 0;
-			}
-			#about {
-				top: 100px;
-				background-color: #fdfdfd;
-			}
-
-			#objectives {
-				top: 160px;
-				background-color: #3505b8;
-			}
-
-			#itinerary {
-				top: 220px;
-				background-color: #ffffff;
-			}
-
-			#competitionrules {
-				top: 280px;
-				background-color: #3505b8;
-			}
-
-			#prizerewards {
-				top: 340px;
-				background-color: #ffffff;
-			}
-
-			#judgingcriteria {
-				top: 400px;
-				background-color: #3505b8;
-			}
-
-			#foulplay {
-				top: 460px;
-				background-color: #ffffff;
-			}
+			
 		</style>
 	</head>
 	<body>
@@ -116,20 +78,46 @@
 		</div>
 		<div class="background"></div>
 
-		<div id="mySidenav" class="sidenav">
-			<a href="info_about.html" id="about" style="color: rgb(0, 0, 0)">About</a>
-			<a href="officialrules.html" id="objectives" style="color: white">Objectives</a>
-			<a href="info_itinerary.html" id="itinerary" style="color: rgb(0, 0, 0)">Itinerary</a>
-			<a href="info_rules.html" id="competitionrules" style="color: white">Rules</a>
-			<a href="info_prize.html" id="prizerewards" style="color: rgb(0, 0, 0)">Prizes</a>
-			<a href="info_judging_criteria.html" id="judgingcriteria" style="color: white">Judging</a>
-			<a href="info_foul.html" id="foulplay" style="color: rgb(0, 0, 0)">Foul Play</a>
-		</div>
 
 		<div style="margin-bottom: 80px; margin-left: 80px; color: white">
-			<h1>Itinerary <br /><br /></h1>
-			<p>TBA</p>
+			<h1>Foul Play <br /><br /></h1>
+<!--
+	==========================================================================
+	==========================================================================
+	==========================================================================
+-->
+
+			<br> 
+			<div class = "indented1">
+				<ol type = "a"> 
+					<li>Participants can join the competition in a team of three</li> 
+					<li>Participants must register using the signup link by 1st February 2022.</li> 
+					<li>Participation fee is RM 30 per group. Whether there are only 1 or 3 members in a group, the fee is fixed.</li> 
+					<li>Participation fees are to payable to IET UNM’s Treasurer:</li>
+					<div class = "indented2">
+							<p><br>indented2<br><br></p>
+					</div>
+					
+
+				</ol>
+
+			</div>
+<!--
+	==========================================================================
+	==========================================================================
+	==========================================================================
+-->
+
+
+
 		</div>
+
+		<style> 
+		.indented1 { padding-left: 20pt; padding-right: 30pt; } 
+		.indented2 { padding-left: 30pt; padding-right: 50pt; } 
+		
+		</style>
+
 
 		<div class="cprt">
 			<p>© 2021 IET UNM. All Rights Reserved.</p>

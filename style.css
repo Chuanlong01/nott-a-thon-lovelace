@@ -2107,7 +2107,9 @@ iframe {
 	min-height: 70px;
 	min-width: 200px;
 	background: transparent;
-	margin: 10px;
+	margin-right: 100px;
+	margin-top: 50px;
+	
 	text-align: center;
 	line-height: 30px;
 	border-color: rgb(182, 145, 224);
