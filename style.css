@@ -994,10 +994,14 @@ h6 {
 	grid-column: 2/3;
 }
 
-.sameline {
-	display: flex;
+.sameline{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
 	text-align: center;
+	padding: 50px 0;
+	height: auto;
 }
+
 
 .nottathon > .prize > #detailcontent {
 	display: grid;
@@ -1028,6 +1032,10 @@ h6 {
 	color: rgba(255, 255, 255, 0.8);
 	line-height: 150%;
 	padding: 20px;
+}
+
+.organizedBy > img{
+	width: 30vw;
 }
 
 /* for timeline */
@@ -1192,6 +1200,7 @@ h6 {
 	#hackerrank {
 		display: none;
 	}
+	
 }
 
 @media screen and (max-width: 550px) {
@@ -1230,6 +1239,17 @@ h6 {
 		height: 30px;
 		width: 30px;
 	}
+
+	.sameline{
+		grid-template-columns: repeat(1, 1fr);
+	}
+
+	.sponsorship > h6 {
+		font-size: 30px;
+		padding: 10px 0;
+	}
+	
+
 }
 /* FAQs */
 .background {
@@ -1389,30 +1409,29 @@ h6 {
 	}
 }
 /* Contributor */
-.sponsorship {
+.sponsorship{
 	height: auto;
-	width: 30vw;
 	color: rgba(255, 255, 255, 0.9);
 	text-align: center;
 	font-size: 6px;
 	font-family: Arial, Helvetica, sans-serif;
 	font-weight: 600;
 }
-/*
+
 .sponsorship > h6 {
 	padding-top: 80px;
 	padding-bottom: 50px;
 }
 .sponsorship > img {
-	width: 350px;
-	height: 150px;
-	background-color: rgba(255, 255, 255, 0.8);
+	width: 300px;
+	height: 100px;
+
 }
 .sponsorship > img:hover {
 	transition: all 0.3s;
-	background-color: rgba(255, 255, 255, 1);
+	background-color: rgba(255, 255, 255, 0.3);
 }
-*/
+
 .contributor {
 	height: auto;
 	color: white;
