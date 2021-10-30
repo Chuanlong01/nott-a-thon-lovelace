@@ -2278,8 +2278,19 @@ h2 {
 
 
 .indented1 { 
-	padding-left: 20pt; padding-right: 30pt; 
+	padding-left: 30pt; padding-right: 30pt; 
 	font-size: 20px;
 } 
 .indented2 { padding-left: 30pt; padding-right: 50pt; } 
   
+.RulesTitle{
+	color: #fff;
+	/*
+	-webkit-text-stroke: 2px ; 
+	*/
+
+	text-shadow:
+	2px 2px 4px rgb(164, 62, 233),
+	-2px -2px 4px rgba(202, 24, 238, 0.651);
+
+}
