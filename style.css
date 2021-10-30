@@ -710,9 +710,8 @@
 
 #label {
 	font-size: 14px;
-	color: rgba(255, 255, 255, 0.35);
+	color: rgba(255, 255, 255, 0.5);
 	text-transform: uppercase;
-	display: grid;
 	align-items: flex-start;
 }
 @media screen and (max-width: 1000px) {
