@@ -857,32 +857,17 @@ h6 {
 
 	font-size: 20px;
 	text-transform: uppercase;
-	-webkit-animation: mockglowing 1300ms infinite;
-	-moz-animation: mockglowing 1300ms infinite;
-	-o-animation: mockglowing 1300ms infinite;
-	animation: mockglowing 3000ms infinite;
-}
 
+}
+/*
 #mockcontest span {
 	cursor: pointer;
 	display: inline-block;
 	position: relative;
 	transition: 0.5s;
 }
-@-webkit-keyframes mockglowing {
-	0% {
-		/*background-color: rgb(3, 48, 85);*/
-		-webkit-box-shadow: 0 0 50px #bc81e4;
-	}
-	50% {
-		background-color: rgb(56, 56, 56);
-		-webkit-box-shadow: 0 0 50px #8c00ff;
-	}
-	100% {
-		/*background-color: rgb(67, 88, 10);*/
-		-webkit-box-shadow: 0 0 50px #24035a;
-	}
-}
+
+*/
 
 .about {
 	margin-top: 50px;
@@ -2109,7 +2094,7 @@ iframe {
 	background: transparent;
 	margin-right: 100px;
 	margin-top: 50px;
-
+	
 	text-align: center;
 	line-height: 30px;
 	border-color: rgb(182, 145, 224);
@@ -2122,7 +2107,7 @@ iframe {
 	text-shadow: -1px -1px 0px rgba(255, 255, 255, 0.2), 1px 1px 2px rgba(0, 0, 0, 0.2);
 	font-size: 18px;
 	font-family: "Bahnschrift", fantasy;
-	transition: 0.1s ease-out;
+	/*transition: 0.1s ease-out;*/
 	padding-top: 10px;
 	padding-right: 13px;
 	padding-bottom: 10px;
@@ -2131,12 +2116,15 @@ iframe {
 	box-shadow: inset 1px 1px 2px rgba(240, 242, 243, 0.795), inset 3px 15px 45px rgba(255, 255, 255, 0.1), inset -1px -1px 2px rgba(0, 0, 0, 0.5),
 		inset -3px -15px 45px rgba(0, 0, 0, 0.2), 1px 5px 30px -4px rgba(0, 0, 0, 1);
 		*/
+		/*
 	text-transform: uppercase;
 	-webkit-animation: glowing 1300ms infinite;
 	-moz-animation: glowing 1300ms infinite;
 	-o-animation: glowing 1300ms infinite;
 	animation: glowing 1300ms infinite;
+	*/
 }
+/*
 #round_glow_button span {
 	cursor: pointer;
 	display: inline-block;
@@ -2152,57 +2140,77 @@ iframe {
 	right: -20px;
 	transition: 0s;
 }
-@-webkit-keyframes glowing {
-	0% {
-		/*background-color: rgb(3, 48, 85);*/
-		-webkit-box-shadow: 0 0 15px #0091b2;
-	}
-	50% {
-		/*background-color: rgb(41, 2, 85);*/
-		-webkit-box-shadow: 0 0 80px #21c7ed;
-	}
-	100% {
-		/*background-color: rgb(67, 88, 10);*/
-		-webkit-box-shadow: 0 0 15px #51cdec;
-	}
-}
+*/
 
 /*
 ================Neon text==============
 from: https://css-tricks.com/how-to-create-neon-text-with-css/
 */
 .neonText {
-	color: #fff;
-	text-shadow: 0 0 7px rgb(1, 81, 95), 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #f09, 0 0 82px #f09, 0 0 92px #f09, 0 0 102px #f09, 0 0 151px #f09;
-}
+    color: #fff;
+    text-shadow:
+      0 0 7px rgb(1, 81, 95),
+      0 0 10px #fff,
+      0 0 21px #fff,
+      0 0 42px #f09,
+      0 0 82px #f09,
+      0 0 92px #f09,
+      0 0 102px #f09,
+      0 0 151px #f09;
+	  
+  }
+
 
 /* Additional styling */
-
 /*
 
 
-h1,
-h2 {
-	font-weight: 400;
-	line-height: 1;
+h1, h2 {
+ 
+  font-weight: 400;
+  line-height: 1;
 }
-
+  
 h1 {
-	animation: pulsate 0.11s ease-in-out infinite alternate;
-}
 
+    animation: pulsate 0.11s ease-in-out infinite alternate;     
+}
+  
+h2 {
+    
+}
 
 .container {
-	margin-top: 20vh;
+  margin-top: 20vh;
 }
 
 @keyframes pulsate {
-	100% {
-		text-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 19px #fff, 0 0 40px #f09, 0 0 80px #f09, 0 0 90px #f09, 0 0 100px #f09, 0 0 150px #f09;
-	}
+    
+  100% {
 
-	0% {
-		text-shadow: 0 0 4px #fff, 0 0 10px #fff, 0 0 18px #fff, 0 0 38px #f09, 0 0 73px #f09, 0 0 80px #f09, 0 0 94px #f09, 0 0 140px #f09;
-	}
+      text-shadow:
+      0 0 4px #fff,
+      0 0 11px #fff,
+      0 0 19px #fff,
+      0 0 40px #f09,
+      0 0 80px #f09,
+      0 0 90px #f09,
+      0 0 100px #f09,
+      0 0 150px #f09;
+  
+  }
+  
+  0% {
+
+    text-shadow:
+    0 0 4px #fff,
+    0 0 10px #fff,
+    0 0 18px #fff,
+    0 0 38px #f09,
+    0 0 73px #f09,
+    0 0 80px #f09,
+    0 0 94px #f09,
+    0 0 140px #f09;
+
 }
 */
