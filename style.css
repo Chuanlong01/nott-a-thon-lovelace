@@ -1371,12 +1371,14 @@ h6 {
 /* Contributor */
 .sponsorship {
 	height: auto;
+	width: 30vw;
 	color: rgba(255, 255, 255, 0.9);
 	text-align: center;
-	font-size: 60px;
+	font-size: 6px;
 	font-family: Arial, Helvetica, sans-serif;
 	font-weight: 600;
 }
+/*
 .sponsorship > h6 {
 	padding-top: 80px;
 	padding-bottom: 50px;
@@ -1390,6 +1392,7 @@ h6 {
 	transition: all 0.3s;
 	background-color: rgba(255, 255, 255, 1);
 }
+*/
 .contributor {
 	height: auto;
 	color: white;
