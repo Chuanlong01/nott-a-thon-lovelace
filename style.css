@@ -771,6 +771,11 @@
 	.time > div > p {
 		font-size: 40px;
 		align-content: center;
+		text-shadow: none;
+	}
+
+	.time > div > span {
+		text-shadow: none;
 	}
 	#label {
 		font-size: 10px;
