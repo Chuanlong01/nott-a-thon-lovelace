@@ -714,6 +714,7 @@
 	text-transform: uppercase;
 	align-items: flex-start;
 }
+
 @media screen and (max-width: 1000px) {
 	.countdown {
 		margin: auto;
@@ -819,6 +820,7 @@ h6 {
 	padding: 30px;
 	color: rgba(255, 255, 255, 0.95);
 }
+
 
 #detailcontent {
 	font-size: 20px;
@@ -1014,6 +1016,14 @@ h6 {
 	padding: 20px;
 	color: white;
 }
+
+.nottathon > .prize > #detailcontent > .second, 
+.nottathon > .prize > #detailcontent > .glow,
+.nottathon > .prize > #detailcontent > .third{
+	margin-bottom: 50px;
+}
+
+
 .nottathon > .prize > #detailcontent > .second > h6,
 .nottathon > .prize > #detailcontent > .third > h6 {
 	font-size: 28px;
@@ -1209,6 +1219,10 @@ h6 {
 }
 
 @media screen and (max-width: 550px) {
+	.glow {
+		animation: glow;
+	}
+
 	.nottathon {
 		grid-template-columns: 1fr 10fr 1fr;
 	}
