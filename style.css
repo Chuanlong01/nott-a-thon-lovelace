@@ -2284,25 +2284,22 @@ h2 {
 */
 
 #rule_box {
-	border: 1px solid;
-	border-width: 5px;
-	border-radius: 15px;
-	border-color: #5e0fa8;
-	padding-left: 8px;
+
+	padding-left: 8vw;
 	padding-right: 8px;
 	padding-bottom: 50px;
 	padding-top: 30px;
-	background-color: #000000;
-	margin-right: 10px;
-	margin-bottom: 10px;
-	margin-left: 30px; 
+	background-color: rgba(0, 0, 0, 0.3);
+
+	margin-bottom: 20px;
+	
 	color: white;
 }
 
 .indented1 {
 	padding-left: 30pt;
 	padding-right: 30pt;
-	font-size: 20px;
+	font-size: 1vw + 10px;
 }
 .indented2 {
 	padding-left: 30pt;
@@ -2314,7 +2311,7 @@ h2 {
 	/*
 	-webkit-text-stroke: 2px ; 
 	*/
-	margin-left: 80px; 
+	margin-left: 8vw;
 	color: white;
 	text-shadow: 2px 2px 4px rgb(164, 62, 233), -2px -2px 4px rgba(202, 24, 238, 0.651);
 }
