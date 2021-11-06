@@ -799,7 +799,15 @@
 		display: grid;
 		align-self: flex-start;
 	}
+
+
+
+
+
+
 }
+
+
 #colon {
 	font-size: 40px;
 	font-weight: 550;
@@ -2175,7 +2183,7 @@ iframe {
 
 	text-align: center;
 	line-height: 30px;
-	border-color: rgb(144, 79, 219);
+	border-color: rgb(113, 10, 197);
 	border-width: 5px;
 	border-bottom-left-radius: 30px;
 	border-bottom-right-radius: 30px;
@@ -2202,6 +2210,20 @@ iframe {
 	animation: glowing 1300ms infinite;
 	*/
 }
+
+@media screen and (max-width:500px) {
+	#register_butt_container{
+
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 60%;
+		
+	
+	}
+	
+}
+
 /*
 #round_glow_button span {
 	cursor: pointer;
