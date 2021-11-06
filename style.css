@@ -168,14 +168,13 @@
 	background: rgb(248, 248, 248);
 	border-style: solid;
 	border-color: rgb(167, 61, 238);
-	border-radius: 4px;
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
 	font-weight: 600;
-
 	line-height: 2.5;
-	
 }
-.dropdown a:hover {background-color: rgba(228, 222, 222, 0.8);}
+.dropdown a:hover {
+	background-color: rgba(228, 222, 222, 0.8);
+}
 .rules_drpdwn {
 	color: rgb(87, 13, 224);
 }
@@ -306,6 +305,8 @@
 		background-color: initial;
 		transform: none;
 		left: 30%;
+		border: none;
+		text-align: left;
 	}
 	.trigger-enter .arrow {
 		display: none;
@@ -827,7 +828,6 @@ h6 {
 	color: rgba(255, 255, 255, 0.95);
 }
 
-
 #detailcontent {
 	font-size: 20px;
 	padding: 20px;
@@ -884,7 +884,6 @@ h6 {
 
 	font-size: 20px;
 	text-transform: uppercase;
-
 }
 /*
 #mockcontest span {
@@ -1002,7 +1001,7 @@ h6 {
 	grid-column: 2/3;
 }
 
-.sameline{
+.sameline {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	text-align: center;
@@ -1023,12 +1022,11 @@ h6 {
 	color: white;
 }
 
-.nottathon > .prize > #detailcontent > .second, 
+.nottathon > .prize > #detailcontent > .second,
 .nottathon > .prize > #detailcontent > .glow,
-.nottathon > .prize > #detailcontent > .third{
+.nottathon > .prize > #detailcontent > .third {
 	margin-bottom: 50px;
 }
-
 
 .nottathon > .prize > #detailcontent > .second > h6,
 .nottathon > .prize > #detailcontent > .third > h6 {
@@ -1049,7 +1047,7 @@ h6 {
 	padding: 20px;
 }
 
-.organizedBy > img{
+.organizedBy > img {
 	width: 30vw;
 }
 
@@ -1126,13 +1124,12 @@ h6 {
 	text-transform: uppercase;
 	font-weight: 700;
 	margin-bottom: 10px;
-	text-align:left;
+	text-align: left;
 }
 
-.box .info{
-	text-align:left;
+.box .info {
+	text-align: left;
 }
-
 
 .box .info:first-letter {
 	text-transform: capitalize;
@@ -1222,7 +1219,6 @@ h6 {
 	#hackerrank {
 		display: none;
 	}
-	
 }
 
 @media screen and (max-width: 550px) {
@@ -1235,7 +1231,6 @@ h6 {
 	}
 	.nottathon .container-timeline {
 		grid-template-columns: 100%;
-		
 	}
 
 	h5 {
@@ -1271,7 +1266,7 @@ h6 {
 		width: 30px;
 	}
 
-	.sameline{
+	.sameline {
 		grid-template-columns: repeat(1, 1fr);
 	}
 
@@ -1279,8 +1274,6 @@ h6 {
 		font-size: 30px;
 		padding: 10px 0;
 	}
-	
-
 }
 /* FAQs */
 .background {
@@ -1440,7 +1433,7 @@ h6 {
 	}
 }
 /* Contributor */
-.sponsorship{
+.sponsorship {
 	height: auto;
 	color: rgba(255, 255, 255, 0.9);
 	text-align: center;
@@ -1456,7 +1449,6 @@ h6 {
 .sponsorship > img {
 	width: 300px;
 	height: 100px;
-
 }
 .sponsorship > img:hover {
 	transition: all 0.3s;
@@ -2167,7 +2159,7 @@ iframe {
 	background: transparent;
 	margin-right: 100px;
 	margin-top: 50px;
-	
+
 	text-align: center;
 	line-height: 30px;
 	border-color: rgb(144, 79, 219);
@@ -2189,7 +2181,7 @@ iframe {
 	box-shadow: inset 1px 1px 2px rgba(240, 242, 243, 0.795), inset 3px 15px 45px rgba(255, 255, 255, 0.1), inset -1px -1px 2px rgba(0, 0, 0, 0.5),
 		inset -3px -15px 45px rgba(0, 0, 0, 0.2), 1px 5px 30px -4px rgba(0, 0, 0, 1);
 		*/
-		/*
+	/*
 	text-transform: uppercase;
 	-webkit-animation: glowing 1300ms infinite;
 	-moz-animation: glowing 1300ms infinite;
@@ -2220,15 +2212,9 @@ iframe {
 from: https://css-tricks.com/how-to-create-neon-text-with-css/
 */
 .neonText {
-    color: #fff;
-    text-shadow:
-      0 0 7px rgb(7, 7, 7),
-      0 0 100px rgb(129, 20, 192),
-
-      0 0 151px rgb(129, 20, 192);
-	  
-  }
-
+	color: #fff;
+	text-shadow: 0 0 7px rgb(7, 7, 7), 0 0 100px rgb(129, 20, 192), 0 0 151px rgb(129, 20, 192);
+}
 
 /* Additional styling */
 /*
@@ -2294,24 +2280,23 @@ h2 {
 	background-color: #000000;
 	margin-right: 30px;
 	margin-bottom: 10px;
+}
 
-  }
-
-
-.indented1 { 
-	padding-left: 30pt; padding-right: 30pt; 
+.indented1 {
+	padding-left: 30pt;
+	padding-right: 30pt;
 	font-size: 20px;
-} 
-.indented2 { padding-left: 30pt; padding-right: 50pt; } 
-  
-.RulesTitle{
+}
+.indented2 {
+	padding-left: 30pt;
+	padding-right: 50pt;
+}
+
+.RulesTitle {
 	color: #fff;
 	/*
 	-webkit-text-stroke: 2px ; 
 	*/
 
-	text-shadow:
-	2px 2px 4px rgb(164, 62, 233),
-	-2px -2px 4px rgba(202, 24, 238, 0.651);
-
+	text-shadow: 2px 2px 4px rgb(164, 62, 233), -2px -2px 4px rgba(202, 24, 238, 0.651);
 }
