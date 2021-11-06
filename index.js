@@ -88,7 +88,7 @@ function openMockTest() {
 	window.open("https://www.hackerrank.com/testing-for-nott-a-thon-turing");
 }
 function googleform() {
-	window.open("https://forms.gle/6WYx6ekwvbgkn7bV9");
+	window.open("https://forms.gle/iRAnDsEQwMUUXgoM8");
 	// alert("Registration is closed, sorry for inconvenience! Hope that we will see you next year!");
 	//window.location.href='/result.html';
 }
