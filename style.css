@@ -2287,12 +2287,16 @@ h2 {
 	border: 1px solid;
 	border-width: 5px;
 	border-radius: 15px;
-	padding-left: 20px;
+	border-color: #5e0fa8;
+	padding-left: 8px;
+	padding-right: 8px;
 	padding-bottom: 50px;
-	padding-top: 50px;
+	padding-top: 30px;
 	background-color: #000000;
-	margin-right: 30px;
+	margin-right: 10px;
 	margin-bottom: 10px;
+	margin-left: 30px; 
+	color: white;
 }
 
 .indented1 {
@@ -2310,6 +2314,7 @@ h2 {
 	/*
 	-webkit-text-stroke: 2px ; 
 	*/
-
+	margin-left: 80px; 
+	color: white;
 	text-shadow: 2px 2px 4px rgb(164, 62, 233), -2px -2px 4px rgba(202, 24, 238, 0.651);
 }
