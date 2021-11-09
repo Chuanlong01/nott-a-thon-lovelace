@@ -45,6 +45,11 @@
 	color: indigo;
 	background-color: inherit;
 }
+.scrolldown.fab fa-discord {
+	color: indigo;
+	background-color: inherit;
+}
+
 .rule {
 	height: 100%;
 	width: 100%;
@@ -115,6 +120,10 @@
 	color: rgb(246, 246, 190);
 	transition: all 0.3s;
 }
+.fab fa-discord:hover {
+	color: rgb(246, 246, 190);
+	transition: all 0.3s;
+}
 .fb.scrolldown:hover {
 	background-color: black;
 	font-size: 25px;
@@ -126,7 +135,18 @@
 	color: black;
 	font-size: 30px;
 }
+.fab.scrolldown.fa-discord:hover {
+	color: black;
+	font-size: 30px;
+}
+
 .fa.fa-instagram {
+	padding-right: 30px;
+	font-size: 24px;
+	color: whitesmoke;
+	padding: 2%;
+}
+.fab fa-discord {
 	padding-right: 30px;
 	font-size: 24px;
 	color: whitesmoke;
@@ -339,6 +359,9 @@
 		color: rgba(0, 0, 0, 0.95);
 	}
 	.fa.fa-instagram {
+		font-size: 35px;
+	}
+	.fab fa-discord {
 		font-size: 35px;
 	}
 }
