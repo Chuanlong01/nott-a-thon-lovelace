@@ -822,14 +822,7 @@
 		display: grid;
 		align-self: flex-start;
 	}
-
-
-
-
-
-
 }
-
 
 #colon {
 	font-size: 40px;
@@ -1713,6 +1706,16 @@ h6 {
 	padding: 6px;
 	font-size: 13px;
 }
+.cprt_rules {
+	background-color: rgba(0, 0, 0, 0.8);
+	color: rgba(255, 255, 255, 0.9);
+	text-align: center;
+	padding: 6px 0px;
+	font-size: 13px;
+	bottom: 0px;
+	position: fixed;
+	width: 100%;
+}
 
 /* Rulebook */
 
@@ -2234,18 +2237,13 @@ iframe {
 	*/
 }
 
-@media screen and (max-width:500px) {
-	#register_butt_container{
-		text-align:center;
-		
-		
-	
+@media screen and (max-width: 500px) {
+	#register_butt_container {
+		text-align: center;
 	}
-	#round_glow_button{
+	#round_glow_button {
 		margin-right: 50px;
-	
 	}
-	
 }
 
 /*
@@ -2330,7 +2328,6 @@ h2 {
 */
 
 #rule_box {
-
 	padding-left: 8vw;
 	padding-right: 8px;
 	padding-bottom: 50px;
@@ -2338,7 +2335,7 @@ h2 {
 	background-color: rgba(0, 0, 0, 0.3);
 
 	margin-bottom: 20px;
-	
+
 	color: white;
 }
 
