@@ -7,7 +7,7 @@ lecturer photos?
 video home page?
 embed discord link
 consolation prize RM100 for 4th & 5th need to include?
-
+mock test????
 
 # Done
 registration form link done
