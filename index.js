@@ -85,7 +85,7 @@ function openInsta() {
 	window.open("https://www.instagram.com/iet_unmc/");
 }
 function openMockTest() {
-	window.open("https://www.hackerrank.com/testing-for-nott-a-thon-turing");
+	window.open("https://www.hackerrank.com/nott-a-thon-turing-1611496773");
 }
 function googleform() {
 	window.open("https://forms.gle/iRAnDsEQwMUUXgoM8");
