@@ -1066,7 +1066,8 @@ h6 {
 }
 
 .nottathon > .prize > #detailcontent > .second > h6,
-.nottathon > .prize > #detailcontent > .third > h6 {
+.nottathon > .prize > #detailcontent > .third > h6,
+.nottathon > .prize > #detailcontent > .fourth > h6 {
 	font-size: 28px;
 }
 .nottathon > .prize > #detailcontent > div > img {
