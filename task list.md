@@ -1,8 +1,8 @@
 # Things to do
-mock test????
+
 need to reorganise and modify contributors list
 lecturer photos?
-consolation prize RM75 for 4th & 5th need to include?
+
 video home page?
 
 # Done
@@ -12,3 +12,5 @@ Make sure the count down correct
 update timeline
 Make sure competition rules are accurate
 Check out the FAQs > is nottathonrelated to nottacode? remove this??
+consolation prize RM75 for 4th & 5th need to include?
+mock test????
