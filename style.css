@@ -1530,7 +1530,11 @@ h6 {
 	border: 2px solid transparent;
 	border-radius: 2%;
 	background-color: rgb(252, 252, 252, 0.15);
+
 }
+
+
+
 .dr > h7 {
 	font-size: 37px;
 	color: rgba(255, 234, 118, 0.85);
