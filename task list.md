@@ -3,7 +3,17 @@
 need to reorganise and modify contributors list
 lecturer photos?
 
+daniel photo
+
+edwin photo
+
+
 video home page?
+
+
+# To do for registration form
+the difficulty of challenges
+difficulty of dif questions
 
 # Done
 registration form link done
