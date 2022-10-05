@@ -2,12 +2,8 @@
 
 need to reorganise and modify contributors list
 lecturer photos?
-
 daniel photo
-
 edwin photo
-
-
 video home page?
 
 
