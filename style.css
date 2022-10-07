@@ -1543,23 +1543,26 @@ h6 {
 	border-radius: 2%;
 	background-color: rgb(252, 252, 252, 0.15);
 	padding-top: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 
 }
 
 
 
-.dr > h7 {
+.dr > div >  h7 {
 	font-size: 37px;
 	color: rgba(255, 234, 118, 0.85);
 	
 
 }
-.dr > div {
+.dr > div > div {
 	padding: 30px 0;
 	font-size: 17px;
 }
 
-.dr > img {
+.dr > div > img {
 	max-height: 150px;
 	border-radius: 10px;
 	border: #7e2acd solid 5px;
