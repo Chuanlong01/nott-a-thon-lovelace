@@ -1,3 +1,17 @@
+@font-face {
+    font-family: OxtaFont;
+    src: url('fonts/Oxta.ttf');
+	font-weight: 200;
+    }
+
+
+@font-face {
+	font-family: ChakraFont;
+	src: url('fonts/ChakraPetch-Regular.ttf');
+	font-weight: 200;
+	}
+	
+
 * {
 	padding: 0;
 	margin: 0;
@@ -384,13 +398,13 @@
 	font-size: 70px;
 	padding: 5px;
 	/* font-family: "Sansita Swashed", cursive; */
-	font-family: "Verdana", cursive;
+	font-family: "OxtaFont", cursive;
 }
 #line2 {
 	font-size: 30px;
 	padding: 10px 5px;
 	padding-bottom: 50px;
-	font-family: "Arial", Times, serif;
+	font-family: "ChakraFont", Times, serif;
 	margin-bottom: 20px;
 }
 #line3,
@@ -398,7 +412,7 @@
 #line5,
 #line6 {
 	font-size: 22px;
-	font-family: "Arial", Times, serif;
+	font-family: "ChakraFont", Times, serif;
 	padding: 5px;
 }
 
@@ -438,7 +452,7 @@
 	border-top-right-radius: 30px;
 	color: rgb(241, 241, 241);
 	text-shadow: -1px -1px 0px rgba(255, 255, 255, 0.2), 1px 1px 2px rgba(0, 0, 0, 0.2);
-	font-family: "Arial", fantasy;
+	font-family: "ChakraFont", fantasy;
 	transition: 0.1s ease-out;
 	padding-top: 10px;
 	padding-right: 13px;
@@ -834,13 +848,14 @@
 .nottathon {
 	display: grid;
 	grid-template-columns: 3fr 10fr 3fr;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: ChakraFont, Helvetica, sans-serif;
 	text-align: justify;
 	background-color: rgba(0, 0, 0, 0.8);
 	padding-bottom: 100px;
 }
 .container-about {
 	background-color: rgba(0, 0, 0, 0.8);
+	font-family: 'ChakraFont';
 }
 .container-intro {
 	background-color: rgba(0, 0, 0, 0.8);
@@ -859,7 +874,7 @@
 }
 h5,
 h6 {
-	font-family: "Arial", Times, serif;
+	font-family: "ChakraFont", Times, serif;
 	font-size: 48px;
 	font-weight: 500;
 	text-align: center;
@@ -914,7 +929,7 @@ h6 {
 	border-top-right-radius: 30px;
 	color: rgb(255, 255, 255);
 	text-shadow: -1px -1px 0px rgba(255, 255, 255, 0.2), 1px 1px 2px rgba(0, 0, 0, 0.2);
-	font-family: "Arial", fantasy;
+	font-family: "ChakraFont", fantasy;
 	transition: 0.8s ease-out;
 	padding-top: 10px;
 	padding-right: 13px;
@@ -991,11 +1006,16 @@ h6 {
 .nottathon.container-intro {
 	display: grid;
 	grid-template-columns: 1fr 4fr 0.5fr 5fr;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: ChakraFont, Helvetica, sans-serif;
 	text-align: justify;
 	background-color: rgba(0, 0, 0, 0.8);
 	padding-bottom: 100px;
 }
+
+
+
+
+
 .introduction {
 	margin-top: 50px;
 	height: auto;
@@ -1032,7 +1052,7 @@ h6 {
 	height: auto;
 	grid-column: 2/3;
 	grid-template-columns: 100%;
-	font-family: "Arial", Times, serif;
+	font-family: "ChakraFont", Times, serif;
 }
 .sponsor {
 	margin-top: 50px;
@@ -1322,7 +1342,7 @@ h6 {
 .header {
 	height: 250px;
 	text-align: center;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: ChakraFont, Helvetica, sans-serif;
 }
 .header > h4 {
 	color: rgba(255, 255, 255, 0.9);
@@ -1343,7 +1363,7 @@ h6 {
 .question {
 	grid-column: 2/3;
 	padding-top: 40px;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: ChakraFont, Helvetica, sans-serif;
 	transition: all 0.5s !important;
 }
 .ques {
@@ -1478,7 +1498,7 @@ h6 {
 	color: rgba(255, 255, 255, 0.9);
 	text-align: center;
 	font-size: 6px;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: ChakraFont, Helvetica, sans-serif;
 	font-weight: 600;
 
 	border: 2px solid transparent;
@@ -1517,7 +1537,7 @@ h6 {
 .contributor {
 	height: auto;
 	color: white;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: ChakraFont, Helvetica, sans-serif;
 	text-align: center;
 }
 .contributor > h6 {
@@ -1594,7 +1614,7 @@ h6 {
 	color: rgb(255, 234, 118);
 	font-size: 26px;
 	/*added font family*/
-	font-family: fantasy;
+	font-family: 'ChakraFont',fantasy;
 	padding: 30px 0;
 }
 
@@ -2226,7 +2246,7 @@ iframe {
 	color: #eeeeee;
 	cursor: pointer;
 	display: inline-block;
-	font-family: Arial;
+	font-family: ChakraFont;
 	font-size: 20px;
 	padding: 8px 30px;
 	text-align: center;
@@ -2257,7 +2277,7 @@ iframe {
 	color: rgb(241, 241, 241);
 	text-shadow: -1px -1px 0px rgba(255, 255, 255, 0.2), 1px 1px 2px rgba(0, 0, 0, 0.2);
 	font-size: 18px;
-	font-family: "Arial", fantasy;
+	font-family: "ChakraFont", fantasy;
 	/*transition: 0.1s ease-out;*/
 	padding-top: 10px;
 	padding-right: 13px;
@@ -2279,6 +2299,7 @@ iframe {
 @media screen and (max-width: 500px) {
 	#register_butt_container {
 		text-align: center;
+		font-family: 'ChakraFont', fantasy;
 	}
 	#round_glow_button {
 		margin-right: 50px;
@@ -2311,6 +2332,15 @@ from: https://css-tricks.com/how-to-create-neon-text-with-css/
 	color: rgb(255, 255, 255);
 	text-shadow: 2px 2px 4px rgb(28, 93, 206), -2px -2px 10px rgba(5, 200, 254, 0.651);
 	font-weight: bold;
+	
+	/* text-shadow: 0 0 7px rgb(7, 7, 7), 0 0 100px rgb(129, 20, 192), 0 0 151px rgb(129, 20, 192); */
+}
+
+.neonTextTitle {
+	color: rgb(255, 255, 255);
+	text-shadow: 2px 2px 4px rgb(28, 93, 206), -2px -2px 10px rgba(5, 200, 254, 0.651);
+	font-weight: bold;
+	
 	
 	/* text-shadow: 0 0 7px rgb(7, 7, 7), 0 0 100px rgb(129, 20, 192), 0 0 151px rgb(129, 20, 192); */
 }
